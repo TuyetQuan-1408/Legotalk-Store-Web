@@ -1,0 +1,58 @@
+[{
+  "_id": {
+    "$oid": "67dd78777a7f45da07824805"
+  },
+  "Customer_ID": "67dd78777a7f45da07824804",
+  "Cart": []
+},
+{
+  "_id": {
+    "$oid": "67dd7dd7867eaa794d413b2e"
+  },
+  "Customer_ID": "67dd7dd7867eaa794d413b2d",
+  "Cart": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a4262ff",
+      "Amount": 0
+    },
+    {
+      "Product_ID": "67d3751fe77e66fc8a426300",
+      "Amount": 0
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67dd9b9379ac1c033d4ecc97"
+  },
+  "Customer_ID": "67dd9b9379ac1c033d4ecc96",
+  "Cart": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a426308",
+      "Amount": 1
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67dd9e5979ac1c033d4ecd16"
+  },
+  "Customer_ID": "67dd9e5979ac1c033d4ecd15",
+  "Cart": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a426315",
+      "Amount": 1
+    },
+    {
+      "Product_ID": "67d3751fe77e66fc8a42631c",
+      "Amount": 1
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67ddbb2be4c658e56558439d"
+  },
+  "Customer_ID": "67ddbb2be4c658e56558439c",
+  "Cart": []
+}]

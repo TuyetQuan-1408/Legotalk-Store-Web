@@ -1,0 +1,1326 @@
+[{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a4262fe"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec7",
+  "Product_Name": "GULF POTCHE 911 GT3 RS",
+  "Pieces": 2700,
+  "Weight": 5000,
+  "Price": 1650000,
+  "Second_Price": 1485000,
+  "Product_Description": "GULF POTCHE 911 GT3 RS - NON-LEGO\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: SUPERCAR - includes 2700 pieces & weight about 5000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 500,
+  "Discount_ID": "67b8871f387fb271016ff554"
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a4262ff"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec7",
+  "Product_Name": "LAMBORGHINI TERZO MILLENNIO",
+  "Pieces": 3600,
+  "Weight": 6000,
+  "Price": 1989000,
+  "Second_Price": 1790100,
+  "Product_Description": "LAMBORGHINI TERZO MILLENNIO\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: SUPERCAR - includes 3600 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0.5,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426300"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec7",
+  "Product_Name": "ALFA ROMEO 33 STRADALE",
+  "Pieces": 3000,
+  "Weight": 6000,
+  "Price": 2240000,
+  "Second_Price": 2016000,
+  "Product_Description": "ALFA ROMEO 33 STRADALE\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: SUPERCAR - includes 3000 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 1,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426301"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec7",
+  "Product_Name": "MCLAREN P1",
+  "Pieces": 3500,
+  "Weight": 7000,
+  "Price": 1650000,
+  "Second_Price": 1485000,
+  "Product_Description": "MCLAREN P1\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: SUPERCAR - includes 3500 pieces & weight about 7000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 1.5,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426302"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec7",
+  "Product_Name": "FERRARI LAFERRARI FXX-K EVO - RED CHROME",
+  "Pieces": 3200,
+  "Weight": 6000,
+  "Price": 6899000,
+  "Second_Price": 6209100,
+  "Product_Description": "FERRARI LAFERRARI FXX-K EVO - RED CHROME\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: SUPERCAR - includes 3200 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 2,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426303"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec7",
+  "Product_Name": "FERRARI LAFERRARI FXX-K EVO - WHITE",
+  "Pieces": 3200,
+  "Weight": 6000,
+  "Price": 5899000,
+  "Second_Price": 5309100,
+  "Product_Description": "FERRARI LAFERRARI FXX-K EVO - WHITE\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: SUPERCAR - includes 3200 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 2.5,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426304"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec7",
+  "Product_Name": "FERRARI LAFERRARI FXX-K EVO - YELLOW",
+  "Pieces": 3200,
+  "Weight": 6000,
+  "Price": 5899000,
+  "Second_Price": 5309100,
+  "Product_Description": "FERRARI LAFERRARI FXX-K EVO - YELLOW\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: SUPERCAR - includes 3200 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 3,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426305"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec8",
+  "Product_Name": "NINJAGO CITY DOCKS",
+  "Pieces": 3553,
+  "Weight": 5500,
+  "Price": 1829000,
+  "Second_Price": 1646100,
+  "Product_Description": "NINJAGO CITY DOCKS\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: NINJAGO - includes 3553 pieces & weight about 5500g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 3.5,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426306"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec8",
+  "Product_Name": "QUAKE MECH",
+  "Pieces": 1202,
+  "Weight": 2000,
+  "Price": 1099000,
+  "Second_Price": 989100,
+  "Product_Description": "QUAKE MECH\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: NINJAGO - includes 1202 pieces & weight about 2000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 4,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426307"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec8",
+  "Product_Name": "NINJAGO CITY",
+  "Pieces": 4867,
+  "Weight": 7000,
+  "Price": 2490000,
+  "Second_Price": 2241000,
+  "Product_Description": "NINJAGO CITY\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: NINJAGO - includes 4867 pieces & weight about 7000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 4.5,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426308"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec8",
+  "Product_Name": "TEMPLE OF AIRJITZU",
+  "Pieces": 2028,
+  "Weight": 4000,
+  "Price": 1435000,
+  "Second_Price": 1291500,
+  "Product_Description": "TEMPLE OF AIRJITZU\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: NINJAGO - includes 2028 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 3,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426309"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec8",
+  "Product_Name": "TEMPLE OF THE DRAGON ENERGY CORES",
+  "Pieces": 2000,
+  "Weight": 4750,
+  "Price": 600000,
+  "Second_Price": 540000,
+  "Product_Description": "TEMPLE OF THE DRAGON ENERGY CORES\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: NINJAGO - includes 2000 pieces & weight about 4750g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42630a"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec8",
+  "Product_Name": "DRAGON STONE SHRINE",
+  "Pieces": 1000,
+  "Weight": 4750,
+  "Price": 740000,
+  "Second_Price": 666000,
+  "Product_Description": "DRAGON STONE SHRINE\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: NINJAGO - includes 1000 pieces & weight about 4750g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42630b"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec8",
+  "Product_Name": "THE CRYSTAL KING",
+  "Pieces": 722,
+  "Weight": 4750,
+  "Price": 440000,
+  "Second_Price": 396000,
+  "Product_Description": "THE CRYSTAL KING\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: NINJAGO - includes 722 pieces & weight about 4750g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42630c"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec8",
+  "Product_Name": "NINJA ULTRA COMBO MECH",
+  "Pieces": 1104,
+  "Weight": 4750,
+  "Price": 645000,
+  "Second_Price": 580500,
+  "Product_Description": "NINJA ULTRA COMBO MECH\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: NINJAGO - includes 1104 pieces & weight about 4750g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42630d"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec8",
+  "Product_Name": "NYAS SAMURAI X MECH",
+  "Pieces": 1003,
+  "Weight": 4750,
+  "Price": 580000,
+  "Second_Price": 522000,
+  "Product_Description": "NYAS SAMURAI X MECH\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: NINJAGO - includes 1003 pieces & weight about 4750g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42630e"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec8",
+  "Product_Name": "LLOYD'S TITAN MECH",
+  "Pieces": 876,
+  "Weight": 4750,
+  "Price": 570000,
+  "Second_Price": 513000,
+  "Product_Description": "LLOYD'S TITAN MECH\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: NINJAGO - includes 876 pieces & weight about 4750g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42630f"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec8",
+  "Product_Name": "ZANE'S ICE DRAGON",
+  "Pieces": 973,
+  "Weight": 4750,
+  "Price": 505000,
+  "Second_Price": 454500,
+  "Product_Description": "ZANE'S ICE DRAGON\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: NINJAGO - includes 973 pieces & weight about 4750g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426310"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec8",
+  "Product_Name": "THE ULTRA DRAGON",
+  "Pieces": 951,
+  "Weight": 4750,
+  "Price": 505000,
+  "Second_Price": 454500,
+  "Product_Description": "THE ULTRA DRAGON\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: NINJAGO - includes 951 pieces & weight about 4750g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426311"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec8",
+  "Product_Name": "LLOYD'S GOLDEN ULTRA DRAGON",
+  "Pieces": 989,
+  "Weight": 4750,
+  "Price": 560000,
+  "Second_Price": 504000,
+  "Product_Description": "LLOYD'S GOLDEN ULTRA DRAGON\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: NINJAGO - includes 989 pieces & weight about 4750g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426312"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec8",
+  "Product_Name": "FIRE DRAGON ATTACK",
+  "Pieces": 563,
+  "Weight": 4750,
+  "Price": 390000,
+  "Second_Price": 351000,
+  "Product_Description": "FIRE DRAGON ATTACK\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: NINJAGO - includes 563 pieces & weight about 4750g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426313"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec9",
+  "Product_Name": "FLOWER BOUQUET",
+  "Pieces": 756,
+  "Weight": 1000,
+  "Price": 319000,
+  "Second_Price": 287100,
+  "Product_Description": "FLOWER BOUQUET\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: FLOWERS - includes 756 pieces & weight about 1000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426314"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec9",
+  "Product_Name": "DRIED FLOWER CENTER PIECE",
+  "Pieces": 812,
+  "Weight": 1000,
+  "Price": 395000,
+  "Second_Price": 355500,
+  "Product_Description": "DRIED FLOWER CENTER PIECE\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: FLOWERS - includes 812 pieces & weight about 1000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426315"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec9",
+  "Product_Name": "BIRD OF PARADISE",
+  "Pieces": 1173,
+  "Weight": 2000,
+  "Price": 555000,
+  "Second_Price": 499500,
+  "Product_Description": "BIRD OF PARADISE\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: FLOWERS - includes 1173 pieces & weight about 2000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426316"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec9",
+  "Product_Name": "ORCHID - NON-LEGO",
+  "Pieces": 608,
+  "Weight": 1000,
+  "Price": 375000,
+  "Second_Price": 337500,
+  "Product_Description": "ORCHID - NON-LEGO\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: FLOWERS - includes 608 pieces & weight about 1000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426317"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec9",
+  "Product_Name": "ORCHID - AUTHENTIC",
+  "Pieces": 608,
+  "Weight": 1000,
+  "Price": 1465000,
+  "Second_Price": 1318500,
+  "Product_Description": "ORCHID - AUTHENTIC\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: FLOWERS - includes 608 pieces & weight about 1000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426318"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec9",
+  "Product_Name": "PIRANHA PLANT - NON-LEGO",
+  "Pieces": 540,
+  "Weight": 1000,
+  "Price": 475000,
+  "Second_Price": 427500,
+  "Product_Description": "PIRANHA PLANT - NON-LEGO\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: FLOWERS - includes 540 pieces & weight about 1000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426319"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ec9",
+  "Product_Name": "PIRANHA PLANT - AUTHENTIC",
+  "Pieces": 540,
+  "Weight": 1000,
+  "Price": 1980000,
+  "Second_Price": 1782000,
+  "Product_Description": "PIRANHA PLANT - AUTHENTIC\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: FLOWERS - includes 540 pieces & weight about 1000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42631a"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "MILLENNIUM FALCON",
+  "Pieces": 7541,
+  "Weight": 2500,
+  "Price": 669000,
+  "Second_Price": 602100,
+  "Product_Description": "MILLENNIUM FALCON\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 7541 pieces & weight about 2500g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42631b"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "BD-1",
+  "Pieces": 1062,
+  "Weight": 1500,
+  "Price": 649000,
+  "Second_Price": 584100,
+  "Product_Description": "BD-1\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 1062 pieces & weight about 1500g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42631c"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "MILLENNIUM FALCON ULTRA",
+  "Pieces": 7600,
+  "Weight": 15000,
+  "Price": 3899000,
+  "Second_Price": 3509100,
+  "Product_Description": "MILLENNIUM FALCON ULTRA\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 7600 pieces & weight about 15000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42631d"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "AT-AT",
+  "Pieces": 6785,
+  "Weight": 12000,
+  "Price": 3399000,
+  "Second_Price": 3059100,
+  "Product_Description": "AT-AT\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 6785 pieces & weight about 12000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42631e"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "SANDSCRAWLER",
+  "Pieces": 3296,
+  "Weight": 5000,
+  "Price": 2380000,
+  "Second_Price": 2142000,
+  "Product_Description": "SANDSCRAWLER\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 3296 pieces & weight about 5000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42631f"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "SLAVE I",
+  "Pieces": 1996,
+  "Weight": 3000,
+  "Price": 1729000,
+  "Second_Price": 1556100,
+  "Product_Description": "SLAVE I\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 1996 pieces & weight about 3000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426320"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "VENATOR-CLASS REPUBLIC ATTACK CRUISER",
+  "Pieces": 5374,
+  "Weight": 4000,
+  "Price": 3200000,
+  "Second_Price": 2880000,
+  "Product_Description": "VENATOR-CLASS REPUBLIC ATTACK CRUISER\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 5374 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426321"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "IMPERIAL STAR DESTROYER",
+  "Pieces": 4784,
+  "Weight": 14000,
+  "Price": 3500000,
+  "Second_Price": 3150000,
+  "Product_Description": "IMPERIAL STAR DESTROYER\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 4784 pieces & weight about 14000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426322"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "TANTIVE IV",
+  "Pieces": 1768,
+  "Weight": 3000,
+  "Price": 799000,
+  "Second_Price": 719100,
+  "Product_Description": "TANTIVE IV\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 1768 pieces & weight about 3000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426323"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "THE RAZOR CREST",
+  "Pieces": 6187,
+  "Weight": 4000,
+  "Price": 695000,
+  "Second_Price": 625500,
+  "Product_Description": "THE RAZOR CREST\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 6187 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426324"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "GHOST & PHANTOM II",
+  "Pieces": 1394,
+  "Weight": 4000,
+  "Price": 839000,
+  "Second_Price": 755100,
+  "Product_Description": "GHOST & PHANTOM II\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 1394 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426325"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "MANGADORIAN FANG FIGHTER VS TIE INTERCEPTOR",
+  "Pieces": 957,
+  "Weight": 4000,
+  "Price": 635000,
+  "Second_Price": 571500,
+  "Product_Description": "MANGADORIAN FANG FIGHTER VS TIE INTERCEPTOR\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 957 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426326"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "MANLADORIAN STARFIGHTER",
+  "Pieces": 544,
+  "Weight": 4000,
+  "Price": 405000,
+  "Second_Price": 364500,
+  "Product_Description": "MANLADORIAN STARFIGHTER\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 544 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426327"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "SLAVE 1-20TH ANNIVERSARY EDITION",
+  "Pieces": 1007,
+  "Weight": 4000,
+  "Price": 589000,
+  "Second_Price": 530100,
+  "Product_Description": "SLAVE 1-20TH ANNIVERSARY EDITION\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 1007 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426328"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "CORUSCANT GUARD GUNSHIP",
+  "Pieces": 1200,
+  "Weight": 4000,
+  "Price": 735000,
+  "Second_Price": 661500,
+  "Product_Description": "CORUSCANT GUARD GUNSHIP\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 1200 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426329"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "AT-TE WALKER",
+  "Pieces": 1082,
+  "Weight": 4000,
+  "Price": 685000,
+  "Second_Price": 616500,
+  "Product_Description": "AT-TE WALKER\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 1082 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42632a"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "CLONE TURBO TANK",
+  "Pieces": 903,
+  "Weight": 4000,
+  "Price": 625000,
+  "Second_Price": 562500,
+  "Product_Description": "CLONE TURBO TANK\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 903 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42632b"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "INVISIBLE HAND",
+  "Pieces": 5000,
+  "Weight": 4000,
+  "Price": 439000,
+  "Second_Price": 395100,
+  "Product_Description": "INVISIBLE HAND\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 5000 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42632c"
+  },
+  "Category_ID": "67b885723c6997c58fdd8eca",
+  "Product_Name": "TANTIVE IV",
+  "Pieces": 1768,
+  "Weight": 4000,
+  "Price": 435000,
+  "Second_Price": 391500,
+  "Product_Description": "TANTIVE IV\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: STARWAR - includes 1768 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42632d"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecb",
+  "Product_Name": "PORSCHE 911 GT3 RS",
+  "Pieces": 2704,
+  "Weight": 6000,
+  "Price": 1499000,
+  "Second_Price": 1349100,
+  "Product_Description": "PORSCHE 911 GT3 RS\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: TECHNIC - includes 2704 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42632e"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecb",
+  "Product_Name": "FERRARI DAYTONA SP3",
+  "Pieces": 3778,
+  "Weight": 7500,
+  "Price": 1299000,
+  "Second_Price": 1169100,
+  "Product_Description": "FERRARI DAYTONA SP3\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: TECHNIC - includes 3778 pieces & weight about 7500g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42632f"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecb",
+  "Product_Name": "PEUGEOT 9X8 24H LE MANS",
+  "Pieces": 1775,
+  "Weight": 3200,
+  "Price": 839000,
+  "Second_Price": 755100,
+  "Product_Description": "PEUGEOT 9X8 24H LE MANS\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: TECHNIC - includes 1775 pieces & weight about 3200g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426330"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecb",
+  "Product_Name": "24 HOURS RACE CAR - NON-LEGO",
+  "Pieces": 1800,
+  "Weight": 2500,
+  "Price": 769000,
+  "Second_Price": 692100,
+  "Product_Description": "24 HOURS RACE CAR - NON-LEGO\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: TECHNIC - includes 1800 pieces & weight about 2500g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426331"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecb",
+  "Product_Name": "24 HOURS RACE CAR - AUTHENTIC",
+  "Pieces": 1800,
+  "Weight": 2500,
+  "Price": 8100000,
+  "Second_Price": 7290000,
+  "Product_Description": "24 HOURS RACE CAR - AUTHENTIC\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: TECHNIC - includes 1800 pieces & weight about 2500g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426332"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecb",
+  "Product_Name": "EXTREME ADVENTURE",
+  "Pieces": 2382,
+  "Weight": 3000,
+  "Price": 1395000,
+  "Second_Price": 1255500,
+  "Product_Description": "EXTREME ADVENTURE\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: TECHNIC - includes 2382 pieces & weight about 3000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426333"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecb",
+  "Product_Name": "AIRBUS H175 RESCUE HELICOPTER",
+  "Pieces": 2001,
+  "Weight": 3000,
+  "Price": 1499000,
+  "Second_Price": 1349100,
+  "Product_Description": "AIRBUS H175 RESCUE HELICOPTER\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: TECHNIC - includes 2001 pieces & weight about 3000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426334"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecb",
+  "Product_Name": "BUGATTI CHIRON",
+  "Pieces": 3599,
+  "Weight": 3000,
+  "Price": 1080000,
+  "Second_Price": 972000,
+  "Product_Description": "BUGATTI CHIRON\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: TECHNIC - includes 3599 pieces & weight about 3000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426335"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecb",
+  "Product_Name": "HELICOPTER",
+  "Pieces": 2000,
+  "Weight": 2000,
+  "Price": 1079000,
+  "Second_Price": 971100,
+  "Product_Description": "HELICOPTER\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: TECHNIC - includes 2000 pieces & weight about 2000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426336"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecc",
+  "Product_Name": "NOTER-DAME DE PARIS",
+  "Pieces": 4000,
+  "Weight": 4000,
+  "Price": 7779000,
+  "Second_Price": 7001100,
+  "Product_Description": "NOTER-DAME DE PARIS\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: ARCHITECT - includes 4000 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426337"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecc",
+  "Product_Name": "LONDON",
+  "Pieces": 468,
+  "Weight": 4000,
+  "Price": 405000,
+  "Second_Price": 364500,
+  "Product_Description": "LONDON\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: ARCHITECT - includes 468 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426338"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecc",
+  "Product_Name": "PARIS",
+  "Pieces": 649,
+  "Weight": 4000,
+  "Price": 405000,
+  "Second_Price": 364500,
+  "Product_Description": "PARIS\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: ARCHITECT - includes 649 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426339"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecc",
+  "Product_Name": "CHICAGO",
+  "Pieces": 444,
+  "Weight": 4000,
+  "Price": 405000,
+  "Second_Price": 364500,
+  "Product_Description": "CHICAGO\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: ARCHITECT - includes 444 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42633a"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecc",
+  "Product_Name": "SAN FRANCISCO",
+  "Pieces": 565,
+  "Weight": 4000,
+  "Price": 405000,
+  "Second_Price": 364500,
+  "Product_Description": "SAN FRANCISCO\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: ARCHITECT - includes 565 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42633b"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecc",
+  "Product_Name": "ARC DE TRIOMPHE",
+  "Pieces": 386,
+  "Weight": 4000,
+  "Price": 405000,
+  "Second_Price": 364500,
+  "Product_Description": "ARC DE TRIOMPHE\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: ARCHITECT - includes 386 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42633c"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecc",
+  "Product_Name": "TOKYO",
+  "Pieces": 547,
+  "Weight": 4000,
+  "Price": 405000,
+  "Second_Price": 364500,
+  "Product_Description": "TOKYO\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: ARCHITECT - includes 547 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42633d"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecc",
+  "Product_Name": "SHANGHAI",
+  "Pieces": 597,
+  "Weight": 4000,
+  "Price": 405000,
+  "Second_Price": 364500,
+  "Product_Description": "SHANGHAI\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: ARCHITECT - includes 597 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42633e"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecc",
+  "Product_Name": "SYDNEY",
+  "Pieces": 361,
+  "Weight": 4000,
+  "Price": 389000,
+  "Second_Price": 350100,
+  "Product_Description": "SYDNEY\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: ARCHITECT - includes 361 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42633f"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecc",
+  "Product_Name": "BERLIN",
+  "Pieces": 289,
+  "Weight": 4000,
+  "Price": 389000,
+  "Second_Price": 350100,
+  "Product_Description": "BERLIN\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: ARCHITECT - includes 289 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426340"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecc",
+  "Product_Name": "VENICE",
+  "Pieces": 212,
+  "Weight": 4000,
+  "Price": 389000,
+  "Second_Price": 350100,
+  "Product_Description": "VENICE\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: ARCHITECT - includes 212 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426341"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecc",
+  "Product_Name": "NEY YORK CITY",
+  "Pieces": 598,
+  "Weight": 4000,
+  "Price": 405000,
+  "Second_Price": 364500,
+  "Product_Description": "NEY YORK CITY\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: ARCHITECT - includes 598 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426342"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecc",
+  "Product_Name": "SINGAPORE",
+  "Pieces": 827,
+  "Weight": 4000,
+  "Price": 479000,
+  "Second_Price": 431100,
+  "Product_Description": "SINGAPORE\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: ARCHITECT - includes 827 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426343"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecc",
+  "Product_Name": "DUBAI",
+  "Pieces": 740,
+  "Weight": 4000,
+  "Price": 405000,
+  "Second_Price": 364500,
+  "Product_Description": "DUBAI\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: ARCHITECT - includes 740 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426344"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecd",
+  "Product_Name": "HULKBUSTER - NON-LEGO",
+  "Pieces": 4049,
+  "Weight": 6000,
+  "Price": 1750000,
+  "Second_Price": 1575000,
+  "Product_Description": "HULKBUSTER - NON-LEGO\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: MARVEL - includes 4049 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426345"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecd",
+  "Product_Name": "HULKBUSTER - AUTHENTIC",
+  "Pieces": 4049,
+  "Weight": 6000,
+  "Price": 11300000,
+  "Second_Price": 10170000,
+  "Product_Description": "HULKBUSTER - AUTHENTIC\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: MARVEL - includes 4049 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426346"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecd",
+  "Product_Name": "CAPTAIN AMERICA SHIELD",
+  "Pieces": 3128,
+  "Weight": 5000,
+  "Price": 8690000,
+  "Second_Price": 7821000,
+  "Product_Description": "CAPTAIN AMERICA SHIELD\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: MARVEL - includes 3128 pieces & weight about 5000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426347"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecd",
+  "Product_Name": "THE SHIELD HELICARRIER - NON-LEGO",
+  "Pieces": 2996,
+  "Weight": 6000,
+  "Price": 1599000,
+  "Second_Price": 1439100,
+  "Product_Description": "THE SHIELD HELICARRIER - NON-LEGO\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: MARVEL - includes 2996 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426348"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecd",
+  "Product_Name": "THE SHIELD HELICARRIER - AUTHENTIC",
+  "Pieces": 2996,
+  "Weight": 6000,
+  "Price": 18800000,
+  "Second_Price": 16920000,
+  "Product_Description": "THE SHIELD HELICARRIER - AUTHENTIC\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: MARVEL - includes 2996 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426349"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecd",
+  "Product_Name": "AVENGERS TOWER - NON-LEGO",
+  "Pieces": 5201,
+  "Weight": 8000,
+  "Price": 3280000,
+  "Second_Price": 2952000,
+  "Product_Description": "AVENGERS TOWER - NON-LEGO\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: MARVEL - includes 5201 pieces & weight about 8000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42634a"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecd",
+  "Product_Name": "AVENGERS TOWER - AUTHENTIC",
+  "Pieces": 5201,
+  "Weight": 8000,
+  "Price": 14450000,
+  "Second_Price": 13005000,
+  "Product_Description": "AVENGERS TOWER - AUTHENTIC\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: MARVEL - includes 5201 pieces & weight about 8000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42634b"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecd",
+  "Product_Name": "ENDGAME FINAL BATTLE",
+  "Pieces": 527,
+  "Weight": 6000,
+  "Price": 525000,
+  "Second_Price": 472500,
+  "Product_Description": "ENDGAME FINAL BATTLE\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: MARVEL - includes 527 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42634c"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecd",
+  "Product_Name": "SPIDER-MAN VS SANDMAN: FINAL BATTLE",
+  "Pieces": 45,
+  "Weight": 6000,
+  "Price": 350000,
+  "Second_Price": 315000,
+  "Product_Description": "SPIDER-MAN VS SANDMAN: FINAL BATTLE\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: MARVEL - includes 45 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42634d"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecd",
+  "Product_Name": "THE HULKBUSTER: THE BATTLE OF WAKANDA MARVEL",
+  "Pieces": 385,
+  "Weight": 6000,
+  "Price": 330000,
+  "Second_Price": 297000,
+  "Product_Description": "THE HULKBUSTER: THE BATTLE OF WAKANDA MARVEL\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: MARVEL - includes 385 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42634e"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecd",
+  "Product_Name": "IRON MAN FIGURE",
+  "Pieces": 381,
+  "Weight": 6000,
+  "Price": 310000,
+  "Second_Price": 279000,
+  "Product_Description": "IRON MAN FIGURE\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: MARVEL - includes 381 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42634f"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecd",
+  "Product_Name": "THE NEW GUADIAN'S SHIP",
+  "Pieces": 1108,
+  "Weight": 6000,
+  "Price": 715000,
+  "Second_Price": 643500,
+  "Product_Description": "THE NEW GUADIAN'S SHIP\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: MARVEL - includes 1108 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426350"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecd",
+  "Product_Name": "THE AVENGERS QUINJET",
+  "Pieces": 795,
+  "Weight": 6000,
+  "Price": 580000,
+  "Second_Price": 522000,
+  "Product_Description": "THE AVENGERS QUINJET\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: MARVEL - includes 795 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426351"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ece",
+  "Product_Name": "HOGWARTS CASTLE",
+  "Pieces": 6020,
+  "Weight": 8000,
+  "Price": 2349000,
+  "Second_Price": 2114100,
+  "Product_Description": "HOGWARTS CASTLE\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: HARRY POTTER - includes 6020 pieces & weight about 8000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426352"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ece",
+  "Product_Name": "EXPECTO PATRONUM",
+  "Pieces": 754,
+  "Weight": 1500,
+  "Price": 539000,
+  "Second_Price": 485100,
+  "Product_Description": "EXPECTO PATRONUM\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: HARRY POTTER - includes 754 pieces & weight about 1500g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426353"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ece",
+  "Product_Name": "GRINGOTTS WIZARDING BANK",
+  "Pieces": 4803,
+  "Weight": 7000,
+  "Price": 2889000,
+  "Second_Price": 2600100,
+  "Product_Description": "GRINGOTTS WIZARDING BANK\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: HARRY POTTER - includes 4803 pieces & weight about 7000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426354"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ece",
+  "Product_Name": "HOGWARTS ICONS - COLLECTORS' EDITION",
+  "Pieces": 3010,
+  "Weight": 5000,
+  "Price": 1189000,
+  "Second_Price": 1070100,
+  "Product_Description": "HOGWARTS ICONS - COLLECTORS' EDITION\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: HARRY POTTER - includes 3010 pieces & weight about 5000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426355"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ece",
+  "Product_Name": "HOGWARTS CASTLE AND GROUNDS",
+  "Pieces": 2660,
+  "Weight": 4000,
+  "Price": 1599000,
+  "Second_Price": 1439100,
+  "Product_Description": "HOGWARTS CASTLE AND GROUNDS\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: HARRY POTTER - includes 2660 pieces & weight about 4000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426356"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecf",
+  "Product_Name": "DISNEY CASTLE (2016) - NON-LEGO",
+  "Pieces": 4080,
+  "Weight": 6000,
+  "Price": 1650000,
+  "Second_Price": 1485000,
+  "Product_Description": "DISNEY CASTLE (2016) - NON-LEGO\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: DISNEY - includes 4080 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426357"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecf",
+  "Product_Name": "DISNEY CASTLE (2016) - AUTHENTIC",
+  "Pieces": 4080,
+  "Weight": 6000,
+  "Price": 12699000,
+  "Second_Price": 11429100,
+  "Product_Description": "DISNEY CASTLE (2016) - AUTHENTIC\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: DISNEY - includes 4080 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426358"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecf",
+  "Product_Name": "DISNEY CASTLE (2023) - NON-LEGO",
+  "Pieces": 4837,
+  "Weight": 6000,
+  "Price": 1650000,
+  "Second_Price": 1485000,
+  "Product_Description": "DISNEY CASTLE (2023) - NON-LEGO\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: DISNEY - includes 4837 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a426359"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecf",
+  "Product_Name": "DISNEY CASTLE (2023) - AUTHENTIC",
+  "Pieces": 4837,
+  "Weight": 6000,
+  "Price": 12699000,
+  "Second_Price": 11429100,
+  "Product_Description": "DISNEY CASTLE (2023) - AUTHENTIC\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: DISNEY - includes 4837 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42635a"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ecf",
+  "Product_Name": "DISNEY TRIBUTE CAMERA",
+  "Pieces": 811,
+  "Weight": 6000,
+  "Price": 2999000,
+  "Second_Price": 2699100,
+  "Product_Description": "DISNEY TRIBUTE CAMERA\r\n⊹ Launch: 06/2016\r\n⊹ Material: ABS plastic\r\n⊹ Theme: DISNEY - includes 811 pieces & weight about 6000g\r\n———\r\n⊹ This is a Nonlego product.\r\n⊹ Our Nonlego products still get the best quality and exact proportions to the original. We also have our ‘Missing Piece Support’ policy for it.\r\n\r\nThank you!\r\n",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42635b"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ed0",
+  "Product_Name": "ACRYLIC DISPLAY BOX",
+  "Price": 399000,
+  "Second_Price": 359100,
+  "Product_Description": "Make your Lego sets more systematic and organized by using this Acrylic Display box!\r\n\r\nWe selected the high quality material for it can show your favorite collectibles more intuitive\r\n\r\n⊹ Size: 68x30x20cm - 3mm thickness\r\n⊹ Available for cars in scale 1:8 & 1:10\r\n⊹ Can stack up to 7 boxes in a row\r\n\r\n_________\r\n\r\nAssemble easily, you don’t need to worry about the assembly process. Any difficulties in assembling, just DM us.",
+  "Rating": 0,
+  "Stock_Quantity": 99
+},
+{
+  "_id": {
+    "$oid": "67d3751fe77e66fc8a42635c"
+  },
+  "Category_ID": "67b885723c6997c58fdd8ed1",
+  "Product_Name": "WALLBOARD",
+  "Second_Price": 0,
+  "Product_Description": "Contact for custom product",
+  "Rating": 0,
+  "Stock_Quantity": 99
+}]

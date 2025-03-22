@@ -1,0 +1,105 @@
+[{
+  "_id": {
+    "$oid": "67dd78957a7f45da07824809"
+  },
+  "Order_ID": "67dd78957a7f45da07824807",
+  "Payment_Method": "COD",
+  "Amount": 5166000,
+  "Products": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a426308",
+      "Quantity": 4,
+      "Status": "Chờ xác nhận"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67dd894802904e82fa16264b"
+  },
+  "Order_ID": "67dd894802904e82fa162649",
+  "Payment_Method": "COD",
+  "Amount": 1790100,
+  "Products": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a4262ff",
+      "Quantity": 1
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67dd9af279ac1c033d4ecc95"
+  },
+  "Order_ID": "67dd9af279ac1c033d4ecc93",
+  "Payment_Method": "COD",
+  "Amount": 24343200,
+  "Products": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a426359",
+      "Quantity": 2
+    },
+    {
+      "Product_ID": "67d3751fe77e66fc8a4262fe",
+      "Quantity": 1
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67dd9bc979ac1c033d4eccfc"
+  },
+  "Order_ID": "67dd9bc979ac1c033d4eccfa",
+  "Payment_Method": "COD",
+  "Amount": 6309000,
+  "Products": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a426308",
+      "Quantity": 2
+    },
+    {
+      "Product_ID": "67d3751fe77e66fc8a426307",
+      "Quantity": 1
+    },
+    {
+      "Product_ID": "67d3751fe77e66fc8a4262fe",
+      "Quantity": 1
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67dd9f4179ac1c033d4ecdf0"
+  },
+  "Order_ID": "67dd9f4179ac1c033d4ecdee",
+  "Payment_Method": "COD",
+  "Amount": 7804800,
+  "Products": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a42631c",
+      "Quantity": 2
+    },
+    {
+      "Product_ID": "67d3751fe77e66fc8a426313",
+      "Quantity": 1
+    },
+    {
+      "Product_ID": "67d3751fe77e66fc8a426315",
+      "Quantity": 1
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67ddbbc7e4c658e565584498"
+  },
+  "Order_ID": "67ddbbc7e4c658e565584496",
+  "Payment_Method": "COD",
+  "Amount": 3486000,
+  "Products": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a426307",
+      "Quantity": 2
+    }
+  ]
+}]

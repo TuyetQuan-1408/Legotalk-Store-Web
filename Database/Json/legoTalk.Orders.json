@@ -1,0 +1,336 @@
+[{
+  "_id": {
+    "$oid": "67dc3b2c877196c502096dae"
+  },
+  "Customer_ID": "67da9487f2e6f37f03d4cf7d",
+  "Order_Date": "20/03/2025",
+  "Discount_Code": "Không có mã giảm giá",
+  "Amount": 1646100,
+  "Products": [
+    {
+      "Product_ID": "008",
+      "Quantity": 1
+    }
+  ],
+  "Status": "Chờ xác nhận"
+},
+{
+  "_id": {
+    "$oid": "67dc3b61877196c502096db8"
+  },
+  "Customer_ID": "67da9487f2e6f37f03d4cf7d",
+  "Order_Date": "20/03/2025",
+  "Discount_Code": "GIAM20",
+  "Amount": 2284800,
+  "Products": [
+    {
+      "Product_ID": "008",
+      "Quantity": 1
+    },
+    {
+      "Product_ID": "011",
+      "Quantity": 1
+    }
+  ],
+  "Status": "Chờ xác nhận"
+},
+{
+  "_id": {
+    "$oid": "67dc3d69877196c502096e34"
+  },
+  "Customer_ID": "67da681b7935377e19e904f9",
+  "Order_Date": "20/03/2025",
+  "Discount_Code": "Không có mã giảm giá",
+  "Amount": 1291500,
+  "Products": [
+    {
+      "Product_ID": "011",
+      "Quantity": 1
+    }
+  ],
+  "Status": "Chờ xác nhận"
+},
+{
+  "_id": {
+    "$oid": "67dc3dd4877196c502096e39"
+  },
+  "Customer_ID": "67da681b7935377e19e904f9",
+  "Order_Date": "20/03/2025",
+  "Discount_Code": "GIAM20",
+  "Amount": 616000,
+  "Products": [
+    {
+      "Product_ID": "014",
+      "Quantity": 2
+    }
+  ],
+  "Status": "Chờ xác nhận"
+},
+{
+  "_id": {
+    "$oid": "67dc4307877196c502096e65"
+  },
+  "Customer_ID": "67da9487f2e6f37f03d4cf7d",
+  "Order_Date": "20/03/2025",
+  "Discount_Code": "GIAM20",
+  "Amount": 2672600,
+  "Products": [
+    {
+      "Product_ID": "008",
+      "Quantity": 1
+    },
+    {
+      "Product_ID": "002",
+      "Quantity": 1
+    }
+  ],
+  "Status": "Chờ xác nhận"
+},
+{
+  "_id": {
+    "$oid": "67dd204c3dbd817a35315fc9"
+  },
+  "Customer_ID": "67da681b7935377e19e904f9",
+  "Order_Date": "21/03/2025",
+  "Discount_Code": "GIAM20",
+  "Amount": 1410500,
+  "Products": [
+    {
+      "Product_ID": "016",
+      "Quantity": 1
+    },
+    {
+      "Product_ID": "011",
+      "Quantity": 1
+    }
+  ],
+  "Status": "Chờ xác nhận"
+},
+{
+  "_id": {
+    "$oid": "67dd298ff015d5611a1c1ea9"
+  },
+  "Customer_ID": "67da681b7935377e19e904f9",
+  "Order_Date": "21/03/2025",
+  "Discount_Code": "Không có mã giảm giá",
+  "Amount": 2635200,
+  "Products": [
+    {
+      "Product_ID": "008",
+      "Quantity": 1
+    },
+    {
+      "Product_ID": "009",
+      "Quantity": 1
+    }
+  ],
+  "Status": "Chờ xác nhận"
+},
+{
+  "_id": {
+    "$oid": "67dd2edb5fda15cfc9834819"
+  },
+  "Customer_ID": "67da681b7935377e19e904f9",
+  "Order_Date": "21/03/2025",
+  "Discount_Code": "Không có mã giảm giá",
+  "Amount": 540000,
+  "Products": [
+    {
+      "Product_ID": "012",
+      "Quantity": 1
+    }
+  ],
+  "Status": "Chờ xác nhận"
+},
+{
+  "_id": {
+    "$oid": "67dd2f125fda15cfc983487b"
+  },
+  "Customer_ID": "67da681b7935377e19e904f9",
+  "Order_Date": "21/03/2025",
+  "Discount_Code": "GIAM20",
+  "Amount": 3465000,
+  "Products": [
+    {
+      "Product_ID": "001",
+      "Quantity": 3
+    }
+  ],
+  "Status": "Chờ xác nhận"
+},
+{
+  "_id": {
+    "$oid": "67dd30bc5fda15cfc9834896"
+  },
+  "Customer_ID": "67dd30535fda15cfc983488b",
+  "Order_Date": "21/03/2025",
+  "Discount_Code": "Không có mã giảm giá",
+  "Amount": 5471100,
+  "Products": [
+    {
+      "Product_ID": "010",
+      "Quantity": 2
+    },
+    {
+      "Product_ID": "009",
+      "Quantity": 1
+    }
+  ],
+  "Status": "Chờ xác nhận"
+},
+{
+  "_id": {
+    "$oid": "67dd78957a7f45da07824807"
+  },
+  "Customer_ID": "67dd78777a7f45da07824804",
+  "Order_Date": "21/03/2025",
+  "Discount_Code": "Không có mã giảm giá",
+  "Amount": 5166000,
+  "Products": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a426308",
+      "Quantity": 4
+    }
+  ],
+  "Status": "Chờ xác nhận"
+},
+{
+  "_id": {
+    "$oid": "67dd7c7c867eaa794d413b1b"
+  },
+  "Customer_ID": "67dd78777a7f45da07824804",
+  "Order_Date": "21/03/2025",
+  "Discount_Code": "Không có mã giảm giá",
+  "Amount": 2241000,
+  "Products": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a426307",
+      "Quantity": 1
+    }
+  ],
+  "Status": "Chờ xác nhận"
+},
+{
+  "_id": {
+    "$oid": "67dd7e3d867eaa794d413ba8"
+  },
+  "Customer_ID": "67dd7dd7867eaa794d413b2d",
+  "Order_Date": "21/03/2025",
+  "Discount_Code": "Không có mã giảm giá",
+  "Amount": 5669100,
+  "Products": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a426356",
+      "Quantity": 2
+    },
+    {
+      "Product_ID": "67d3751fe77e66fc8a42635a",
+      "Quantity": 1
+    }
+  ],
+  "Status": "Chờ xác nhận"
+},
+{
+  "_id": {
+    "$oid": "67dd894802904e82fa162649"
+  },
+  "Customer_ID": "67dd7dd7867eaa794d413b2d",
+  "Order_Date": "21/03/2025",
+  "Discount_Code": "Không có mã giảm giá",
+  "Amount": 1790100,
+  "Products": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a4262ff",
+      "Quantity": 1
+    }
+  ],
+  "Status": "Chờ xác nhận"
+},
+{
+  "_id": {
+    "$oid": "67dd9af279ac1c033d4ecc93"
+  },
+  "Order_ID": "ORDER_1742576370724",
+  "Customer_ID": "67dd7dd7867eaa794d413b2d",
+  "Order_Date": "21/03/2025",
+  "Discount_Code": "Không có mã giảm giá",
+  "Amount": 24343200,
+  "Products": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a426359",
+      "Quantity": 2
+    },
+    {
+      "Product_ID": "67d3751fe77e66fc8a4262fe",
+      "Quantity": 1
+    }
+  ],
+  "Status": "Chờ xác nhận"
+},
+{
+  "_id": {
+    "$oid": "67dd9bc979ac1c033d4eccfa"
+  },
+  "Order_ID": "ORDER_1742576585976",
+  "Customer_ID": "67dd9b9379ac1c033d4ecc96",
+  "Order_Date": "22/03/2025",
+  "Discount_Code": "Không có mã giảm giá",
+  "Amount": 6309000,
+  "Products": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a426308",
+      "Quantity": 2
+    },
+    {
+      "Product_ID": "67d3751fe77e66fc8a426307",
+      "Quantity": 1
+    },
+    {
+      "Product_ID": "67d3751fe77e66fc8a4262fe",
+      "Quantity": 1
+    }
+  ],
+  "Status": "Chờ xác nhận"
+},
+{
+  "_id": {
+    "$oid": "67dd9f4179ac1c033d4ecdee"
+  },
+  "Order_ID": "ORDER_1742577473918",
+  "Customer_ID": "67dd9e5979ac1c033d4ecd15",
+  "Order_Date": "22/03/2025",
+  "Discount_Code": "Không có mã giảm giá",
+  "Amount": 7804800,
+  "Products": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a42631c",
+      "Quantity": 2
+    },
+    {
+      "Product_ID": "67d3751fe77e66fc8a426313",
+      "Quantity": 1
+    },
+    {
+      "Product_ID": "67d3751fe77e66fc8a426315",
+      "Quantity": 1
+    }
+  ],
+  "Status": "Chờ xác nhận"
+},
+{
+  "_id": {
+    "$oid": "67ddbbc7e4c658e565584496"
+  },
+  "Order_ID": "ORDER_1742584775504",
+  "Customer_ID": "67ddbb2be4c658e56558439c",
+  "Order_Date": "22/03/2025",
+  "Discount_Code": "GIAM20",
+  "Amount": 3486000,
+  "Products": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a426307",
+      "Quantity": 2
+    }
+  ],
+  "Status": "Chờ xác nhận"
+}]

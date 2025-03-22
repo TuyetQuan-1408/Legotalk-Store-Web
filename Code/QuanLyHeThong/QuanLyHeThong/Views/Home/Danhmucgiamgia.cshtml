@@ -1,0 +1,154 @@
+﻿@model List<QuanLyHeThong.Models.Discount>
+
+@{
+    ViewBag.Title = "Danh Sách Giảm Giá";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" type="text/css" href="~/css/teamCss.css" />
+<h2 class="text-center">@ViewBag.Title</h2>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th class="text-center">ID</th>
+                <th class="text-center">Phần Trăm Giảm Giá</th>
+                <th class="text-center">Mô Tả Giảm Giá</th>
+                <th class="text-center">Thao Tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var discount in Model)
+            {
+                <tr>
+                    <td class="text-center">@discount.DiscountId</td>
+                    <td class="text-center">@discount.DiscountPercentage%</td>
+                    <td class="text-center">@discount.DiscountDescription</td>
+                    <td class="text-center">
+                        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#editModal" onclick="openEditModal('@discount.DiscountId')">Sửa</button>
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal" onclick="setDiscountId('@discount.DiscountId')">Xóa</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="text-center mt-3">
+    <button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#addDiscountModal">Thêm Giảm Giá Mới</button>
+</div>
+
+<!-- Modal để thêm giảm giá -->
+<div class="modal fade" id="addDiscountModal" tabindex="-1" aria-labelledby="addDiscountModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addDiscountModalLabel">Thêm Giảm Giá Mới</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="@Url.Action("AddDiscount", "Home")">
+                    @Html.AntiForgeryToken()
+
+                    <!-- Phần trăm giảm giá -->
+                    <div class="mb-3">
+                        <label for="addDiscountPercentage" class="form-label">Phần Trăm Giảm Giá</label>
+                        <input type="number" class="form-control" id="addDiscountPercentage" name="DiscountPercentage" required />
+                    </div>
+
+                    <!-- Mô tả giảm giá -->
+                    <div class="mb-3">
+                        <label for="addDiscountDescription" class="form-label">Mô Tả Giảm Giá</label>
+                        <textarea class="form-control" id="addDiscountDescription" name="DiscountDescription" required></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Thêm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End modal thêm -->
+<!-- Modal để sửa giảm giá -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Sửa Giảm Giá</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="@Url.Action("UpdateDiscount", "Home")">
+                    @Html.AntiForgeryToken()
+
+                    <!-- ID giảm giá (ẩn) -->
+                    <input type="hidden" name="DiscountId" id="editDiscountId" />
+
+                    <!-- Phần trăm giảm giá -->
+                    <div class="mb-3">
+                        <label for="editDiscountPercentage" class="form-label">Phần Trăm Giảm Giá</label>
+                        <input type="number" class="form-control" id="editDiscountPercentage" name="DiscountPercentage" required />
+                    </div>
+
+                    <!-- Mô tả giảm giá -->
+                    <div class="mb-3">
+                        <label for="editDiscountDescription" class="form-label">Mô Tả Giảm Giá</label>
+                        <textarea class="form-control" id="editDiscountDescription" name="DiscountDescription" required></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Cập Nhật</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End modal sửa -->
+<!-- Modal để xóa giảm giá -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Xóa Giảm Giá</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Bạn có chắc chắn muốn xóa giảm giá này không?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <form method="post" action="@Url.Action("DeleteDiscount", "Home")" class="d-inline">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="id" id="discountIdToDelete" />
+                    <button type="submit" class="btn btn-danger">Xóa</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End modal xóa -->
+
+<script>
+    function setDiscountId(discountId) {
+        console.log("Setting Discount ID:", discountId);
+        $('#discountIdToDelete').val(discountId);
+    }
+
+    function openEditModal(discountId) {
+        fetch('/Home/EditDiscount/' + discountId)
+            .then(response => response.json())
+            .then(discount => {
+                $('#editDiscountId').val(discount.DiscountId);
+                $('#editDiscountPercentage').val(discount.DiscountPercentage);
+                $('#editDiscountDescription').val(discount.DiscountDescription);
+                $('#editModal').modal('show');
+            })
+            .catch(error => {
+                console.error('Có lỗi xảy ra:', error);
+                alert('Có lỗi xảy ra: ' + error.message);
+            });
+    }
+</script>

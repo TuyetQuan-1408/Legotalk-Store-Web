@@ -1,0 +1,6 @@
+backend:
+nodemon server
+frontend:
+ng serve --host 0.0.0.0 --disable-host-check
+Tắt port:
+Get-Process | Where-Object {$_.Path -match "node|python|php|java"} | Stop-Process -Force

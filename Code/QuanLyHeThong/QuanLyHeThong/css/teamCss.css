@@ -1,0 +1,85 @@
+﻿input, textarea {
+    padding: 5px !important;
+}
+
+.center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.modal-body {
+    padding-bottom: 20px !important;
+}
+
+.table td img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.card .card-title {
+    color: #FFFFFF !important;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 50px;
+}
+.table thead th {
+    background-color: #e9ecef;
+}
+.card-header {
+    background-color: #333333;
+}
+
+.card-header:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.row > * {
+    padding-right: 0;
+    padding-left: 0;
+}
+.card-body {
+    padding: 15px !important;
+}
+
+.page-link {
+    color: black !important;
+    font-weight: bold;
+    border-radius: 0px !important;
+    padding: 0.37rem 0.9rem;
+    background-color: transparent !important;
+}
+.page-link:focus{
+    box-shadow: none;
+}
+
+.pagination .page-item .page-link:focus {
+    background-color: #6c757db8;
+}
+
+.page-item.active .page-link {
+    background-color: #6c757d1a !important;
+    color: cornflowerblue !important;
+    border: 0.5px solid black;
+}
+.avatar {
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.avatar img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.btn-imgDetail {
+    margin-top: 5px;
+    padding: 15px;
+    background-color: #d5d3d396;
+    font-size: 10px;
+}
+.fa-table-cells:before, .fa-th:before {
+    content: "\f00a";
+    margin-right: 10px;
+}

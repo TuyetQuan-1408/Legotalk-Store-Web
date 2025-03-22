@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "Danhsachtaikhoan";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="card card-success mt-1">
+    <div class="card-header border-transparent">
+        <h3 class="card-title"><i class="fas fa-th mr-1"></i>Danh Sách Tài Khoản</h3>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body p-0 mt-3">
+        <div class="table-responsive">
+
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col" [width]="50" class="text-center">ID</th>
+                        <th scope="col" [width]="100" class="text-center">Tên Tài Khoản</th>
+                        <th scope="col" [width]="100" class="text-center">Email</th>
+                        <th scope="col" [width]="100" class="text-center">Password</th>
+                        <th scope="col" [width]="100" class="text-center">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tbody>
+                    <tr>
+                        <td class="text-center">1</td>
+                        <td class="text-center">admin</td>
+                        <td class="text-center">admin@gmail.com</td>
+                        <td class="text-center">111</td>
+                        <td class="text-center">
+                            <button class="btn btn-warning mx-3">Thêm mới</button>
+                            <button class="btn btn-info">Sửa</button>
+                            <button class="btn btn-danger mx-3">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">2</td>
+                        <td class="text-center">nhanviena</td>
+                        <td class="text-center">nhanviena@gmail.com</td>
+                        <td class="text-center">123</td>
+                        <td class="text-center">
+                            <button class="btn btn-warning mx-3">Thêm mới</button>
+                            <button class="btn btn-info">Sửa</button>
+                            <button class="btn btn-danger mx-3">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">3</td>
+                        <td class="text-center">nhanvienb</td>
+                        <td class="text-center">nhanvienb@gmail.com</td>
+                        <td class="text-center">1234</td>
+                        <td class="text-center">
+                            <button class="btn btn-warning mx-3">Thêm mới</button>
+                            <button class="btn btn-info">Sửa</button>
+                            <button class="btn btn-danger mx-3">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">4</td>
+                        <td class="text-center">nhanvienc</td>
+                        <td class="text-center">nhanvienc@gmail.com</td>
+                        <td class="text-center">1134</td>
+                        <td class="text-center">
+                            <button class="btn btn-warning mx-3">Thêm mới</button>
+                            <button class="btn btn-info">Sửa</button>
+                            <button class="btn btn-danger mx-3">Xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

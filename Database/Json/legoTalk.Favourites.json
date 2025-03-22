@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "67dd78777a7f45da07824806"
+  },
+  "Customer_ID": "67dd78777a7f45da07824804",
+  "Favourite": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a426307"
+    },
+    {
+      "Product_ID": "67d3751fe77e66fc8a426308"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67dd7dd7867eaa794d413b2f"
+  },
+  "Customer_ID": "67dd7dd7867eaa794d413b2d",
+  "Favourite": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a426357"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67dd9b9379ac1c033d4ecc98"
+  },
+  "Customer_ID": "67dd9b9379ac1c033d4ecc96",
+  "Favourite": []
+},
+{
+  "_id": {
+    "$oid": "67dd9e5979ac1c033d4ecd17"
+  },
+  "Customer_ID": "67dd9e5979ac1c033d4ecd15",
+  "Favourite": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a426315"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67ddbb2be4c658e56558439e"
+  },
+  "Customer_ID": "67ddbb2be4c658e56558439c",
+  "Favourite": [
+    {
+      "Product_ID": "67d3751fe77e66fc8a426307"
+    }
+  ]
+}]

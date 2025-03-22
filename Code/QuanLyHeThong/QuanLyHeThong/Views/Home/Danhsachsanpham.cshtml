@@ -1,0 +1,693 @@
+﻿@model List<QuanLyHeThong.Models.Product>
+@{
+    ViewBag.Title = "Danh Sách Sản Phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var discounts = ViewBag.SettingDiscountView as List<QuanLyHeThong.Models.DiscountViewModel>;
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="~/css/teamCss.css" />
+<div class="card card-success mt-1">
+    <div class="card-header border-transparent">
+        <h3 class="card-title text-center"><i class="fas fa-th mr-1"></i>Danh Sách Sản Phẩm</h3>
+    </div>
+    <div class="card-body p-0 mt-3">
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th class="text-center">ID</th>
+                        <th class="text-center">Tên Sản Phẩm</th>
+                        <th class="text-center">Mã Loại Sản Phẩm</th>
+                        <th class="text-center">Đơn Giá</th>
+                        <th class="text-center">Mã giảm giá</th>
+                        <th class="text-center">Giá thứ 2</th>
+                        <th class="text-center">Pieces</th>
+                        <th class="text-center">Rating</th>
+                        <th class="text-center">Số lượng tồn</th>
+                        <th class="text-center">Trọng lượng</th>
+                        <th class="text-center">Ghi Chú</th>
+                        <th class="text-center">Hình ảnh sản phẩm</th>
+                        <th class="text-center">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var product in Model)
+                    {
+                        var discount = discounts?.FirstOrDefault(d => d.DiscountId.ToString() == product.DiscountId?.ToString());
+
+                        decimal discountedPrice = product.Price;
+                        string discountPercentage = "";
+                        string discountDescription = "";
+
+                        if (discount != null)
+                        {
+                            // chuyển discount.DiscountPercentage từ string sang decimal
+                            decimal discountPercentageValue = 0;
+                            if (decimal.TryParse(discount.DiscountPercentage, out discountPercentageValue))
+                            {
+                                // Tính giá giảm
+                                discountedPrice = product.Price - (product.Price * (discountPercentageValue / 100));
+                                discountPercentage = discountPercentageValue.ToString("0") + "%";
+                                discountDescription = discount.DiscountDescription;
+                            }
+                            else
+                            {
+                                discountPercentage = "Invalid Discount Percentage";
+                                discountDescription = "Invalid Discount";
+                            }
+                        }
+
+                        <tr>
+                            <td class="text-center">@product.ProductId</td>
+                            <td class="text-center">@product.ProductName</td>
+                            <td class="text-center">@product.CategoryId</td>
+                            <td class="text-center">
+                                <span style="text-decoration: line-through;">@product.Price.ToString("N0") VND</span>
+                                <br />
+                                @discountedPrice.ToString("N0") VND
+                                <br />
+                                <span style="font-size: 0.9em; color: green;">@discountPercentage</span>
+                            </td>
+                            <td class="text-center">
+                                @{
+                                    var discountId = product.DiscountId?.ToString() ?? "Trống";
+                                }
+                                @discountId
+                            </td>
+                            <td class="text-center">@product.SecondPrice.ToString("N0") VND</td>
+                            <td class="text-center">@product.Pieces</td>
+                            <td class="text-center">
+                                @product.Rating
+                                <i class="fas fa-star" style="color: gold;"></i>
+                            </td>
+                            <td class="text-center">@product.StockQuantity</td>
+                            <td class="text-center">@product.Weight (KG)</td>
+                            <td class="text-center">@product.ProductDescription</td>
+                            <td class="text-center">
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openImageModal('@product.ProductId')">Chi tiết</button>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#editModal" onclick="openEditModal('@product.ProductId')">Sửa</button>
+                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal" onclick="setProductId('@product.ProductId')">Xóa</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- phân trang -->
+        <div class="pagination-container text-center mt-3">
+            <ul class="pagination">
+                @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                {
+                    <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                        <a class="page-link" href="@Url.Action("Danhsachsanpham", "Home", new { page = i })">@i</a>
+                    </li>
+                }
+            </ul>
+        </div>
+        <!-- end phân trang -->
+        <!-- button thêm sp mới -->
+        <div class="text-center mt-3">
+            <button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#addProductModal">Thêm Sản Phẩm Mới</button>
+        </div>
+    </div>
+</div>
+<!-- Modal để add sp -->
+<div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addProductModalLabel">Thêm Sản Phẩm Mới</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="@Url.Action("AddProduct", "Home")" enctype="multipart/form-data">
+                    @Html.AntiForgeryToken()
+
+                    <!-- Trường ID sản phẩm (ẩn) -->
+                    <input type="hidden" name="ProductId" id="addProductId" />
+
+                    <!-- Tên sản phẩm -->
+                    <div class="mb-3">
+                        <label for="addProductName" class="form-label">Tên Sản Phẩm</label>
+                        <input type="text" class="form-control" id="addProductName" name="ProductName" required />
+                    </div>
+
+                    <!-- Mã loại sản phẩm -->
+                    <div class="mb-3">
+                        <label for="addCategoryId" class="form-label">Mã Loại Sản Phẩm</label>
+                        <select class="form-control" id="addCategoryId" name="CategoryId">
+                            @foreach (var category in ViewBag.Categories as IEnumerable<SelectListItem>)
+                            {
+                                <option value="@category.Value">@category.Text</option>
+                            }
+                        </select>
+                    </div>
+
+                    <!-- Giá sản phẩm -->
+                    <div class="mb-3">
+                        <label for="addPrice" class="form-label">Giá</label>
+                        <input type="number" class="form-control" id="addPrice" name="Price" required />
+                    </div>
+
+                    <!-- Pieces -->
+                    <div class="mb-3">
+                        <label for="addPieces" class="form-label">Pieces</label>
+                        <input type="number" step="10" class="form-control" id="addPieces" name="Pieces" required />
+                    </div>
+
+                    <!-- Giá thứ 2 -->
+                    <div class="mb-3">
+                        <label for="addSecondPrice" class="form-label">Giá thứ 2</label>
+                        <input type="number" step="0.1" class="form-control" id="addSecondPrice" name="SecondPrice" required />
+                    </div>
+
+                    <!-- Số lượng tồn -->
+                    <div class="mb-3">
+                        <label for="addStockQuantity" class="form-label">Số Lượng Tồn</label>
+                        <input type="number" class="form-control" id="addStockQuantity" name="StockQuantity" required />
+                    </div>
+
+                    <!-- Trọng lượng -->
+                    <div class="mb-3">
+                        <label for="addWeight" class="form-label">Trọng Lượng</label>
+                        <input type="number" step="0.1" class="form-control" id="addWeight" name="Weight" required />
+                    </div>
+
+                    <!-- Mô tả sản phẩm -->
+                    <div class="mb-3">
+                        <label for="addProductDescription" class="form-label">Ghi Chú</label>
+                        <textarea class="form-control" id="addProductDescription" name="ProductDescription" required style="height: 100px;"></textarea>
+                    </div>
+
+                    <!-- Mã giảm giá -->
+                    <div class="mb-3">
+                        <label for="addDiscountId" class="form-label">Mã Giảm Giá</label>
+                        <select class="form-control" id="DiscountId" name="DiscountId">
+                            @foreach (var discount in ViewBag.Discounts as IEnumerable<SelectListItem>)
+                            {
+                                <option value="@discount.Value">
+                                    @discount.Text
+                                </option>
+                            }
+                        </select>
+                    </div>
+
+                    <div style="width:100%;" class="d-flex justify-content-center"><button type="submit" class="btn btn-primary" style="width:30%;">Thêm</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End Modal add sp -->
+<!-------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modal để sửa sp -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Sửa Sản Phẩm</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="@Url.Action("UpdateProduct", "Home")" enctype="multipart/form-data">
+                    @Html.AntiForgeryToken()
+
+                    <!-- Trường ID sản phẩm (ẩn) -->
+                    <input type="hidden" name="ProductId" id="editProductId" />
+
+                    <!-- Tên sản phẩm -->
+                    <div class="mb-3">
+                        <label for="ProductName" class="form-label">Tên Sản Phẩm</label>
+                        <input type="text" class="form-control" id="ProductName" name="ProductName" required />
+                    </div>
+
+                    <!-- Mã loại sản phẩm -->
+                    <div class="mb-3">
+                        <label for="CategoryId" class="form-label">Mã Loại Sản Phẩm</label>
+                        <select class="form-control" id="CategoryId" name="CategoryId">
+                            @foreach (var category in ViewBag.Categories as IEnumerable<SelectListItem>)
+                            {
+                                <option value="@category.Value">
+                                    @category.Text
+                                </option>
+                            }
+                        </select>
+                    </div>
+
+                    <!-- Giá sản phẩm -->
+                    <div class="mb-3">
+                        <label for="Price" class="form-label">Giá</label>
+                        <input type="number" class="form-control" id="Price" name="Price" required />
+                    </div>
+
+                    <!-- Pieces -->
+                    <div class="mb-3">
+                        <label for="Pieces" class="form-label">Pieces</label>
+                        <input type="number" step="10" class="form-control" id="Pieces" name="Pieces" required />
+                    </div>
+
+                    <!-- Giá thứ 2 -->
+                    <div class="mb-3">
+                        <label for="SecondPrice" class="form-label">Giá thứ 2</label>
+                        <input type="number" step="0.1" class="form-control" id="SecondPrice" name="SecondPrice" required />
+                    </div>
+
+                    <!-- Số lượng tồn -->
+                    <div class="mb-3">
+                        <label for="StockQuantity" class="form-label">Số Lượng Tồn</label>
+                        <input type="number" class="form-control" id="StockQuantity" name="StockQuantity" required />
+                    </div>
+
+                    <!-- Trọng lượng -->
+                    <div class="mb-3">
+                        <label for="Weight" class="form-label">Trọng Lượng</label>
+                        <input type="number" step="0.1" class="form-control" id="Weight" name="Weight" required />
+                    </div>
+
+                    <!-- Mô tả sản phẩm -->
+                    <div class="mb-3">
+                        <label for="ProductDescription" class="form-label">Ghi Chú</label>
+                        <textarea class="form-control" id="ProductDescription" name="ProductDescription" required style="height: 100px;"></textarea>
+                    </div>
+
+                    <!-- Mã giảm giá -->
+                    <div class="mb-3">
+                        <label for="DiscountId" class="form-label">Mã Giảm Giá</label>
+                        <select class="form-control" id="DiscountId" name="DiscountId">
+                            @foreach (var discount in ViewBag.Discounts as IEnumerable<SelectListItem>)
+                            {
+                                <option value="@discount.Value">
+                                    @discount.Text
+                                </option>
+                            }
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary text-center">Cập Nhật</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal sửa sp -->
+<!-------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modal để xóa sp -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Xóa Sản Phẩm</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Bạn có chắc chắn muốn xóa sản phẩm này không?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <form method="post" action="@Url.Action("DeleteProduct", "Home")" class="d-inline">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="id" id="productIdToDelete" />
+                    <button type="submit" class="btn btn-danger">Xóa</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal xóa sp -->
+
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">Thêm/Thay Đổi Ảnh</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Khu vực hình ảnh chính -->
+                <div class="mb-3">
+                    <label for="mainImage" class="form-label">Ảnh Đại Diện</label>
+                    <div class="avatar">
+                        <img id="mainImagePreview" src="" width="150px" style="display:none;" />
+                    </div>
+                    <br />
+                    <input type="file" class="form-control" id="mainImage" accept="image/*" />
+                    <input type="hidden" id="imgProductId" name="ProductId" />
+                    <input type="hidden" id="ImageData" name="images[0].ImageData" />
+                    <input type="hidden" id="ImageId" name="images[0].ImageId" />
+                    <input type="hidden" id="Order" name="images[0].Order" value="1" />
+                </div>
+
+
+                <!-- Khu vực hình ảnh thêm -->
+                <h5>Danh mục ảnh con:</h5>
+                <div id="additionalImagesContainer">
+                    <!-- Các ảnh sẽ được hiển thị ở đây -->
+                </div>
+
+                <!-- Nút thêm ảnh mới -->
+                <div class="text-center mt-3">
+                    <button class="btn btn-success" id="addImageBtn">Thêm Ảnh Mới</button>
+                </div>
+
+                <!-- Nút lưu ảnh -->
+                <div class="text-center mt-3">
+                    <button class="btn btn-primary" id="saveImageBtn">Lưu Ảnh</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    let soAnh = 0;
+    let imageIds = [];
+    let imagesAvatar = {};
+    let imagesArray = [];
+    let updateOrder = [];
+    var _productId = null;
+    function setProductId(productId) {
+        console.log("Setting Product ID:", productId);
+        $('#productIdToDelete').val(productId);
+    }
+    function openEditModal(productId) {
+        fetch('/Home/EditProduct/' + productId)
+            .then(response => response.json())
+            .then(product => {
+                $('#editProductId').val(product.ProductId);
+                $('#ProductName').val(product.ProductName);
+                $('#CategoryId').val(product.CategoryId.toString());
+                $('#Price').val(product.Price);
+                $('#StockQuantity').val(product.StockQuantity);
+                $('#Weight').val(product.Weight);
+                $('#ProductDescription').val(product.ProductDescription);
+                $('#DiscountId').val(product.DiscountId.toString());
+                $('#SecondPrice').val(product.SecondPrice);
+                $('#Rating').val(product.Rating);
+                $('#Pieces').val(product.Pieces);
+                $('#editModal').modal('show');
+            })
+            .catch(error => {
+                console.error('Có lỗi xảy ra:', error);
+                alert('Có lỗi xảy ra: ' + error.message);
+            });
+    }
+    document.getElementById('mainImage').addEventListener('change', function (event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            var oldImageId = document.getElementById('ImageId').value;
+            if (oldImageId) {
+                imageIds.push(oldImageId);
+            }
+            var imagePreview = document.getElementById('mainImagePreview');
+            imagePreview.src = reader.result;
+            imagePreview.style.display = 'block';
+            var imageDataField = document.getElementById('ImageData');
+            imageDataField.value = reader.result;
+            if (!imagesAvatar) {
+                imagesAvatar = {};
+            }
+            imagesAvatar.ImageData = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    });
+
+    function openImageModal(productId) {
+
+        soAnh = 0;
+        document.getElementById('imgProductId').value = productId;
+        _productId = productId;
+        console.log('Opening image modal for product ID:', productId);
+        fetch('/Home/EditImage?ProductId=' + _productId)
+            .then(response => response.json())
+            .then(images => {
+
+                var additionalImagesContainer = document.getElementById('additionalImagesContainer');
+                additionalImagesContainer.innerHTML = '';
+
+                if (images.length > 0) {
+
+                    var mainImage = images[0];
+                    document.getElementById('mainImagePreview').src = mainImage.ImageData;
+                    document.getElementById('mainImagePreview').style.display = 'block';
+                    document.getElementById('ImageData').value = mainImage.ImageData;
+                    document.getElementById('ImageId').value = mainImage.ImageId;
+                    document.getElementById('Order').value = mainImage.Order;
+                }
+
+                images.slice(1).forEach(img => {
+                    var imageContainer = document.createElement('div');
+                    imageContainer.classList.add('image-container');
+                    imageContainer.style.position = 'relative';
+                    imageContainer.style.marginBottom = '10px';
+
+                    var imgElement = document.createElement('img');
+                    imgElement.src = img.ImageData;
+                    imgElement.style.width = '150px';
+                    imgElement.style.objectFit = 'cover';
+
+                    var deleteButton = document.createElement('button');
+                    deleteButton.textContent = 'Xóa';
+                    deleteButton.classList.add('btn', 'btn-danger');
+                    deleteButton.style.position = 'absolute';
+                    deleteButton.style.top = '0';
+                    deleteButton.style.right = '0';
+
+                    deleteButton.addEventListener('click', function () {
+                        imageIds.push(img.ImageId);
+                        imageContainer.remove();
+                    });
+
+                    var orderInput = document.createElement('input');
+                    orderInput.type = 'number';
+                    orderInput.style.marginTop = '20px';
+                    orderInput.placeholder = 'Nhập số thứ tự';
+                    orderInput.classList.add('form-control');
+                    orderInput.name = 'images[].Order';
+                    orderInput.value = img.Order;
+                    orderInput.addEventListener('change', function () {
+                        const imageId = img.ImageId;
+                        const order = orderInput.value;
+
+                        const index = updateOrder.findIndex(item => item.ImageId === imageId);
+                        if (index !== -1) {
+                            updateOrder[index].Order = order;
+                        } else {
+                            updateOrder.push({ ImageId: imageId, Order: order });
+                        }
+
+                        console.log('Updated Order List:', updateOrder);
+                    });
+                    var imageIdInput = document.createElement('input');
+                    imageIdInput.type = 'hidden';
+                    imageIdInput.name = 'images[].ImageId';
+                    imageIdInput.value = img.ImageId;
+                    var imageDataInput = document.createElement('input');
+                    imageDataInput.type = 'hidden';
+                    imageDataInput.name = 'images[].ImageData';
+                    imageDataInput.value = img.ImageData;
+                    imageContainer.appendChild(imgElement);
+                    imageContainer.appendChild(deleteButton);
+                    imageContainer.appendChild(orderInput);
+                    imageContainer.appendChild(imageIdInput);
+                    imageContainer.appendChild(imageDataInput);
+                    additionalImagesContainer.appendChild(imageContainer);
+                });
+
+                $('#imageModal').modal('show');
+            })
+            .catch(error => {
+                console.error('Có lỗi xảy ra:', error);
+                alert('Có lỗi xảy ra: ' + error.message);
+            });
+    }
+
+    document.getElementById('addImageBtn').addEventListener('click', function () {
+        var inputFile = document.createElement('input');
+        inputFile.type = 'file';
+        inputFile.accept = 'image/*';
+
+        inputFile.addEventListener('change', function (event) {
+            var reader = new FileReader();
+            reader.onload = function () {
+                var imageContainer = document.createElement('div');
+                imageContainer.classList.add('image-container');
+                imageContainer.style.position = 'relative';
+                imageContainer.style.marginBottom = '10px';
+
+                var img = document.createElement('img');
+                img.src = reader.result;
+                img.style.width = '150px';
+                img.style.objectFit = 'cover';
+
+                var deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Xóa';
+                deleteButton.classList.add('btn', 'btn-danger');
+                deleteButton.style.position = 'absolute';
+                deleteButton.style.top = '0';
+                deleteButton.style.right = '0';
+
+                deleteButton.addEventListener('click', function () {
+                    const index = imagesArray.findIndex(image => image.ImageData === reader.result);
+                    if (index !== -1) {
+                        imagesArray.splice(index, 1);
+                        imageContainer.remove();
+                    }
+                });
+
+                imageContainer.appendChild(img);
+                imageContainer.appendChild(deleteButton);
+
+                var orderInput = document.createElement('input');
+                orderInput.type = 'number';
+                orderInput.name = 'images[].Order';
+                orderInput.placeholder = 'Nhập số thứ tự';
+                orderInput.style.marginTop = '20px';
+                orderInput.classList.add('form-control');
+                var imageDataInput = document.createElement('input');
+                imageDataInput.type = 'hidden';
+                imageDataInput.name = 'images[].ImageData';
+                imageDataInput.value = reader.result;
+
+                var imageIdInput = document.createElement('input');
+                imageIdInput.type = 'hidden';
+                imageIdInput.name = 'images[].ImageId';
+                imageContainer.appendChild(orderInput);
+                imageContainer.appendChild(imageDataInput);
+                imageContainer.appendChild(imageIdInput);
+
+                document.getElementById('additionalImagesContainer').appendChild(imageContainer);
+                const imageObj = {
+                    ImageData: reader.result,
+                    Order: null
+                };
+                imagesArray.push(imageObj);
+                orderInput.addEventListener('change', function () {
+                    const index = imagesArray.findIndex(image => image.ImageData === reader.result);
+                    if (index !== -1) {
+                        imagesArray[index].Order = orderInput.value;
+                    }
+                });
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        });
+
+        inputFile.click();
+    });
+
+
+    document.getElementById('saveImageBtn').addEventListener('click', async function () {
+
+        const promises = [];
+
+        if (imagesArray && imagesArray.length > 0) {
+            const formData = new FormData();
+            formData.append('productId', _productId);
+            formData.append('images', JSON.stringify(imagesArray));
+
+            promises.push(
+                fetch('/Home/AddImages', {
+                    method: 'POST',
+                    body: formData
+                }).then(response => {
+                    if (!response.ok) {
+                        throw new Error('Lưu ảnh thất bại, mã lỗi: ' + response.status);
+                    }
+                    return response.json();
+                }).then(addData => {
+                    //alert('Lưu ảnh thành công!');
+                    return addData;
+                }).catch(error => {
+                    console.error('Có lỗi xảy ra khi lưu ảnh:', error);
+                    alert('Có lỗi xảy ra khi lưu ảnh: ' + error.message);
+                })
+            );
+        }
+
+        if (imagesAvatar !== null && imagesAvatar !== undefined) {
+            const formDataAvatar = new FormData();
+            formDataAvatar.append('productID', _productId);
+            formDataAvatar.append('imagess', JSON.stringify(imagesAvatar));
+
+            promises.push(
+                fetch('/Home/AddImagesAvatar', {
+                    method: 'POST',
+                    body: formDataAvatar
+                }).then(response => {
+                    if (!response.ok) {
+                        throw new Error('Lưu ảnh đại diện thất bại, mã lỗi: ' + response.status);
+                    }
+                    return response.json();
+                }).then(addAvatarData => {
+                    //alert('Lưu ảnh đại diện thành công!');
+                    return addAvatarData;
+                }).catch(error => {
+                    console.error('Có lỗi xảy ra khi lưu ảnh đại diện:', error);
+                    alert('Có lỗi xảy ra khi lưu ảnh đại diện: ' + error.message);
+                })
+            );
+        }
+
+        if (imageIds && imageIds.length > 0) {
+            const formDataDelete = new FormData();
+            formDataDelete.append('imageIds', JSON.stringify(imageIds));
+
+            promises.push(
+                fetch('/Home/DeleteImages', {
+                    method: 'POST',
+                    body: formDataDelete
+                }).then(response => {
+                    if (!response.ok) {
+                        throw new Error('Xóa ảnh thất bại, mã lỗi: ' + response.status);
+                    }
+                    return response.json();
+                }).then(deleteData => {
+                    //alert('Xóa ảnh thành công!');
+                    return deleteData;
+                }).catch(error => {
+                    console.error('Có lỗi xảy ra khi xóa ảnh:', error);
+                    alert('Có lỗi xảy ra khi xóa ảnh: ' + error.message);
+                })
+            );
+        }
+
+        if (updateOrder.length > 0) {
+            const formDataUpdateOrder = new FormData();
+            formDataUpdateOrder.append('productId', _productId);
+            formDataUpdateOrder.append('updateOrder', JSON.stringify(updateOrder));
+
+            promises.push(
+                fetch('/Home/UpdateOrder', {
+                    method: 'POST',
+                    body: formDataUpdateOrder
+                }).then(response => {
+                    if (!response.ok) {
+                        throw new Error('Cập nhật thứ tự ảnh thất bại, mã lỗi: ' + response.status);
+                    }
+                    return response.json();
+                }).then(updateOrderData => {
+                    //alert('Cập nhật thứ tự ảnh thành công!');
+                    return updateOrderData;
+                }).catch(error => {
+                    console.error('Có lỗi xảy ra khi cập nhật thứ tự ảnh:', error);
+                    alert('Có lỗi xảy ra khi cập nhật thứ tự ảnh: ' + error.message);
+                })
+            );
+        }
+
+        try {
+            await Promise.all(promises);
+            window.location.reload();
+        } catch (error) {
+            console.error('taihen:', error);
+            alert('sentai: ' + error.message);
+        }
+    });
+
+</script>
+
+

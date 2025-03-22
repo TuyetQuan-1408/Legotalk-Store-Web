@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "67dd78777a7f45da07824804"
+  },
+  "email": "ngaonguyenqn2004@gmail.com",
+  "password": "$2b$10$i87SOB7BQAis62zT8GQpZeEGGvFr7ChvAkynkF0.qDp1dCZMR6gtK",
+  "name": "Trịnh",
+  "gender": "male",
+  "dob": null,
+  "phone": "0938994134",
+  "registeredAt": {
+    "$date": "2025-03-21T14:32:23.049Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67dd7dd7867eaa794d413b2d"
+  },
+  "email": "nhily22411ca@st.uel.edu.vn",
+  "password": "$2b$10$2JegcYOfpcRy68yHUmjKH.NAB6M1ZCjxIapGn0KXg6yQ8wuG1MbaC",
+  "name": "",
+  "gender": "female",
+  "dob": "12/5/2004",
+  "phone": "0768120504",
+  "registeredAt": {
+    "$date": "2025-03-21T14:55:19.160Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67dd9b9379ac1c033d4ecc96"
+  },
+  "email": "alice@gmail.com",
+  "password": "$2b$10$awdvscjDJRampOqhdtmFsOr.svsp853ptCNAUBQrAAXZYT9TdCF1.",
+  "name": "Yến",
+  "gender": "female",
+  "dob": "18/11/1976",
+  "phone": "0703801090",
+  "registeredAt": {
+    "$date": "2025-03-21T17:02:11.330Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67dd9e5979ac1c033d4ecd15"
+  },
+  "email": "vulinhchi@gmail.com",
+  "password": "$2b$10$261BoRuv3WHh0WZ8AR0wsuUOCpVbvvjWTkuwBokF48rmjewWQYvne",
+  "name": "Chi",
+  "gender": "female",
+  "dob": "20/11/2009",
+  "phone": "1234567890",
+  "registeredAt": {
+    "$date": "2025-03-21T17:14:01.092Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ddbb2be4c658e56558439c"
+  },
+  "email": "hihi@gmail.com",
+  "password": "$2b$10$ogp9XeQVKQyxI6WddT8h..SSU613O4hoGAgtAT77LNs/qdyxUefMK",
+  "name": "Tuyết Quân",
+  "gender": "female",
+  "dob": "08/09/2004",
+  "phone": "0987654321",
+  "registeredAt": {
+    "$date": "2025-03-21T19:16:59.811Z"
+  }
+}]

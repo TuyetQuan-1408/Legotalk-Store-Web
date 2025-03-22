@@ -1,0 +1,149 @@
+﻿@model List<QuanLyHeThong.Models.Category>
+
+@{
+    ViewBag.Title = "Danh Sách Danh Mục";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" type="text/css" href="~/css/teamCss.css" />
+<h2 class="text-center">Danh Sách Danh Mục</h2>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th class="text-center">ID</th>
+                <th class="text-center">Tên Danh Mục</th>
+                <th class="text-center">Thao Tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var category in Model)
+             {
+                <tr>
+                    <td class="text-center">@category.CategoryId</td>
+                    <td class="text-center">@category.CategoryName</td>
+                    <td class="text-center">
+                        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#editModal" onclick="openEditModal('@category.CategoryId')">Sửa</button>
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal" onclick="setCategoryId('@category.CategoryId')">Xóa</button>
+                    </td>
+                </tr>
+             }
+        </tbody>
+    </table>
+</div>
+
+<!-- phân trang -->
+<div class="pagination-container text-center mt-3">
+    <ul class="pagination">
+        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+        {
+            <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                <a class="page-link" href="@Url.Action("Danhmucsanpham", "Home", new { page = i })">@i</a>
+            </li>
+        }
+    </ul>
+</div>
+
+<div class="text-center mt-3">
+    <button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#addCategoryModal">Thêm Danh Mục Mới</button>
+</div>
+<!-- modal thêm -->
+<div class="modal fade" id="addCategoryModal" tabindex="-1" aria-labelledby="addCategoryModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addCategoryModalLabel">Thêm Danh Mục Mới</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="@Url.Action("AddCategory", "Home")">
+                    @Html.AntiForgeryToken()
+
+                    <!-- Tên danh mục -->
+                    <div class="mb-3">
+                        <label for="addCategoryName" class="form-label">Tên Danh Mục</label>
+                        <input type="text" class="form-control" id="addCategoryName" name="CategoryName" required />
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Thêm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end modal thêm -->
+<!-- modal sửa -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Sửa Danh Mục</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="@Url.Action("UpdateCategory", "Home")">
+                    @Html.AntiForgeryToken()
+
+                    <!-- Trường ID danh mục (ẩn) -->
+                    <input type="hidden" name="CategoryId" id="editCategoryId" />
+
+                    <!-- Tên danh mục -->
+                    <div class="mb-3">
+                        <label for="editCategoryName" class="form-label">Tên Danh Mục</label>
+                        <input type="text" class="form-control" id="editCategoryName" name="CategoryName" required />
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Cập Nhật</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end modal sửa -->
+<!-- modal xóa -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Xóa Danh Mục</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Bạn có chắc chắn muốn xóa danh mục này không?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <form method="post" action="@Url.Action("DeleteCategory", "Home")" class="d-inline">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="id" id="categoryIdToDelete" />
+                    <button type="submit" class="btn btn-danger">Xóa</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end modal xóa -->
+<script>
+    function setCategoryId(categoryId) {
+        console.log("Setting Category ID:", categoryId);
+        $('#categoryIdToDelete').val(categoryId);
+    }
+
+    function openEditModal(categoryId) {
+        fetch('/Home/EditCategory/' + categoryId)
+            .then(response => response.json())
+            .then(category => {
+                $('#editCategoryId').val(category.CategoryId);
+                $('#editCategoryName').val(category.CategoryName);
+                $('#editModal').modal('show');
+            })
+            .catch(error => {
+                console.error('Có lỗi xảy ra:', error);
+                alert('Có lỗi xảy ra: ' + error.message);
+            });
+    }
+</script>

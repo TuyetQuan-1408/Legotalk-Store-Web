@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "Danhsachdonhang";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card card-success mt-1">
+    <div class="card-header border-transparent">
+        <h3 class="card-title"><i class="fas fa-th mr-1"></i> Danh Sách Đơn Hàng</h3>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body p-0 mt-3">
+        <div class="table-responsive">
+            
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col" [width]="200" class="text-center">ID</th>
+                        <th scope="col" [width]="200" class="text-center">Mã Đơn Hàng</th>
+                        <th scope="col" [width]="200" class="text-center">Mã Nhân Viên</th>
+                        <th scope="col" [width]="200" class="text-center">Ngày Bán</th>
+                        <th scope="col" [width]="200" class="text-center">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tbody>
+                    <tr>
+                        <td class="text-center">1</td>
+                        <td class="text-center">DH001</td>
+                        <td class="text-center">NV001</td>
+                        <td class="text-center">12/11/2021</td>
+                        <td class="text-center">
+                            <button class="btn btn-warning mx-1">Thêm mới</button>
+                            <button class="btn btn-info mx-1">Sửa</button>
+                            <button class="btn btn-danger mx-1">Xóa</button>
+                            <button class="btn btn-secondary mx-1">Xem Chi Tiết</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">2</td>
+                        <td class="text-center">DH002</td>
+                        <td class="text-center">NV002</td>
+                        <td class="text-center">12/09/2021</td>
+                        <td class="text-center">
+                            <button class="btn btn-warning mx-1">Thêm mới</button>
+                            <button class="btn btn-info mx-1">Sửa</button>
+                            <button class="btn btn-danger mx-1">Xóa</button>
+                            <button class="btn btn-secondary mx-1">Xem Chi Tiết</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">3</td>
+                        <td class="text-center">DH003</td>
+                        <td class="text-center">NV003</td>
+                        <td class="text-center">12/10/2021</td>
+                        <td class="text-center">
+                            <button class="btn btn-warning mx-1">Thêm mới</button>
+                            <button class="btn btn-info mx-1">Sửa</button>
+                            <button class="btn btn-danger mx-1">Xóa</button>
+                            <button class="btn btn-secondary mx-1">Xem Chi Tiết</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">4</td>
+                        <td class="text-center">DH004</td>
+                        <td class="text-center">NV004</td>
+                        <td class="text-center">12/06/2021</td>
+                        <td class="text-center">
+                            <button class="btn btn-warning mx-1">Thêm mới</button>
+                            <button class="btn btn-info mx-1">Sửa</button>
+                            <button class="btn btn-danger mx-1">Xóa</button>
+                            <button class="btn btn-secondary mx-1">Xem Chi Tiết</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "67b8871f387fb271016ff554"
+  },
+  "Discount_Code": "GIAM10",
+  "Percentage": 10
+},
+{
+  "_id": {
+    "$oid": "67b8871f387fb271016ff555"
+  },
+  "Discount_Code": "GIAM20",
+  "Percentage": 20
+},
+{
+  "_id": {
+    "$oid": "67b8871f387fb271016ff556"
+  },
+  "Discount_Code": "GIAM30",
+  "Percentage": 30
+},
+{
+  "_id": {
+    "$oid": "67b8871f387fb271016ff557"
+  },
+  "Discount_Code": "GIAM40",
+  "Percentage": 40
+},
+{
+  "_id": {
+    "$oid": "67b8871f387fb271016ff558"
+  },
+  "Discount_Code": "GIAM50",
+  "Percentage": 50
+},
+{
+  "_id": {
+    "$oid": "67b8871f387fb271016ff559"
+  },
+  "Discount_Code": "GIAM15",
+  "Percentage": 15
+},
+{
+  "_id": {
+    "$oid": "67b8871f387fb271016ff55a"
+  },
+  "Discount_Code": "GIAM25",
+  "Percentage": 25
+},
+{
+  "_id": {
+    "$oid": "67b8871f387fb271016ff55b"
+  },
+  "Discount_Code": "GIAM35",
+  "Percentage": 35
+}]
