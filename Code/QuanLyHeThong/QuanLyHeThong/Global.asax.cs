@@ -30,6 +30,7 @@ namespace QuanLyHeThong
             container.RegisterType<ICategoryRepository, CategoryRepository>();
             container.RegisterType<IDiscountRepository, DiscountRepository>();
             container.RegisterType<IImageRepository, ImageRepository>();
+            container.RegisterType<IOrderRepository, OrderRepository>();
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
     }

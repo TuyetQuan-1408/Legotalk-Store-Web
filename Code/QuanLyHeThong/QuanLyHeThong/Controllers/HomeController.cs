@@ -23,18 +23,29 @@ namespace QuanLyHeThong.Controllers
         private readonly ICategoryRepository _categoryRepository;
         private readonly IDiscountRepository _discountRepository;
         private readonly IImageRepository _imageRepository;
+        private readonly IOrderRepository _orderRepository;
         public HomeController(IProductRepository productRepository, IAuthService adminRepository,
-            ICategoryRepository categoryRepository, IDiscountRepository discountRepository, IImageRepository imageRepository)
+            ICategoryRepository categoryRepository, IDiscountRepository discountRepository, 
+            IImageRepository imageRepository, IOrderRepository orderRepository)
         {
             _productRepository = productRepository;
             _adminRepository = adminRepository;
             _categoryRepository = categoryRepository;
             _discountRepository = discountRepository;
             _imageRepository = imageRepository;
+            _orderRepository = orderRepository;
+        }
+        public async Task<JsonResult> Test(string year)
+        {
+            var monthlyRevenue = await _orderRepository.GetMonthlyRevenueAsync(year);
+            return Json(monthlyRevenue, JsonRequestBehavior.AllowGet);
         }
         [AuthorizeAdminFilter]
-        public ActionResult Index()
+        public async Task<ActionResult> Index(string year = "2025")
         {
+            var monthlyRevenue = await _orderRepository.GetMonthlyRevenueAsync(year);
+            ViewBag.MonthlyRevenue = monthlyRevenue;
+            ViewBag.CurrentYear = Convert.ToInt32(year);
             return View();
         }
 

@@ -10,19 +10,19 @@ namespace QuanLyHeThong.Models
     public class Order
     {
         [BsonId]
-        public ObjectId OrderId { get; set; }
+        public ObjectId Id { get; set; }
+        [BsonElement("Order_ID")]
+        public string OrderId { get; set; }
         [BsonElement("Customer_ID")]
         public ObjectId CustomerId { get; set; }
 
         [BsonElement("Order_Date")]
-        public DateTime OrderDate { get; set; }
-        [BsonElement("Discount_ID")]
-        public string DiscountId { get; set; }
-
+        public string OrderDate { get; set; }
+        [BsonElement("Discount_Code")]
+        public string DiscountCode { get; set; }
+        public int Amount { get; set; }
         [BsonElement("Products")]
-        public List<Product> Products { get; set; }
-
-        [BsonElement("Phone_Number")]
-        public string Phonenumbers { get; set; }
+        public List<StatisticalProduct> Products { get; set; }
+        public string Status { get; set; }
     }
 }

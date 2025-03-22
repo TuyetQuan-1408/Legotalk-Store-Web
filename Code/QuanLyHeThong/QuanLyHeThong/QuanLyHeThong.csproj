@@ -362,6 +362,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helper\AuthorizeAdminFilter.cs" />
+    <Compile Include="Helper\RevenuePerMonth.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\Category.cs" />
@@ -382,11 +383,13 @@
     <Compile Include="MongoRepositories\Implementations\CategoryRepository.cs" />
     <Compile Include="MongoRepositories\Implementations\DiscountRepository.cs" />
     <Compile Include="MongoRepositories\Implementations\ImageRepository.cs" />
+    <Compile Include="MongoRepositories\Implementations\OrderRepository.cs" />
     <Compile Include="MongoRepositories\Implementations\ProductRepository.cs" />
     <Compile Include="MongoRepositories\Interfaces\IAuthService.cs" />
     <Compile Include="MongoRepositories\Interfaces\ICategoryRepository.cs" />
     <Compile Include="MongoRepositories\Interfaces\IDiscountRepository.cs" />
     <Compile Include="MongoRepositories\Interfaces\IImageRepository.cs" />
+    <Compile Include="MongoRepositories\Interfaces\IOrderRepository.cs" />
     <Compile Include="MongoRepositories\Interfaces\IProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -396,6 +399,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="css\index-css.css" />
     <Content Include="css\teamCss.css" />
     <Content Include="css\vertical-layout-light\style.css" />
     <Content Include="favicon.ico" />

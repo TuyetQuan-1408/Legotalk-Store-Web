@@ -1,0 +1,109 @@
+﻿.statistic-title {
+    text-align: center;
+    font-size: 2.9rem;
+    font-family: "Pridi", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: linear-gradient(90deg, #ff5733, #f39c12);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 12px;
+}
+.small-box {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 5px;
+}
+
+.small-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.small-box .inner {
+    padding: 20px;
+}
+
+.small-box h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.small-box p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.small-box .icon {
+    position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        opacity: 0.2;
+        transition: opacity 0.3s ease;
+        display: block;
+        visibility: visible;
+}
+.small-box:hover .icon {
+    opacity: 0.4;
+}
+
+.small-box.bg-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.small-box.bg-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.small-box.bg-warning {
+    background-color: #ffc107;
+    color: white;
+}
+
+.small-box.bg-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.small-box.bg-info {
+    background: linear-gradient(135deg, #17a2b8, #1abc9c);
+}
+.small-box:hover .icon {
+    opacity: 0.4;
+    transform: rotate(15deg);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .statistic-title {
+        font-size: 2rem;
+    }
+
+    .chart-container {
+        min-height: 400px;
+    }
+}

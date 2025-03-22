@@ -36,14 +36,20 @@ namespace QuanLyHeThong.Models
         public string ProductId { get; set; }
         public string CategoryId { get; set; }
         public string ProductName { get; set; }
-        public decimal Price { get; set; }
+        public int Price { get; set; }
         public double Weight { get; set; }
         public string ProductDescription { get; set; }
         public int StockQuantity { get; set; }
         public string Base64Image { get; set; }
         public string DiscountId { get; set; }
-        public decimal SecondPrice { get; set; }
+        public int SecondPrice { get; set; }
         public double Rating { get; set; }
         public int Pieces { get; set; }
+    }
+    
+    public class StatisticalProduct
+    {
+        public string ProductId { get; set; }
+        public int Quantity { get; set; }
     }
 }
