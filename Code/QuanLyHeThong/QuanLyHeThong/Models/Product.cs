@@ -15,7 +15,7 @@ namespace QuanLyHeThong.Models
         public string CategoryId { get; set; }
         [BsonElement("Product_Name")]
         public string ProductName { get; set; }
-        public decimal Price { get; set; }
+        public int Price { get; set; }
         public double Weight { get; set; }
         [BsonElement("Product_Description")]
         public string ProductDescription { get; set; }
@@ -27,7 +27,7 @@ namespace QuanLyHeThong.Models
         [BsonElement("Discount_ID")]
         public string DiscountId { get; set; }
         [BsonElement("Second_Price")]
-        public decimal SecondPrice { get; set; }
+        public int SecondPrice { get; set; }
         public double Rating { get; set; }
         public int Pieces { get; set; }
     }

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\quanlyhethong\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|solutionrelative:quanlyhethong\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|d:\\vscode\\legotalk\\legotalk final\\code\\quanlyhethong\\quanlyhethong\\mongorepositories\\implementations\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|solutionrelative:quanlyhethong\\mongorepositories\\implementations\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -99,10 +103,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\AppData\\Local\\Temp\\.vsdbgsrc\\07c4ec1cba87e4656ea3ff248a744c9ad14372e0efa94ac6f688b9e3e27ad0b3\\ControllerActionInvoker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\quanlyhethong\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|solutionrelative:quanlyhethong\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\quanlyhethong\\models\\discount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -205,7 +205,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -222,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "QuanLyHeThong\\Views\\Home\\Index.cshtml",
@@ -235,19 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DiscountRepository.cs",
-              "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\MongoRepositories\\Implementations\\DiscountRepository.cs",
-              "RelativeDocumentMoniker": "QuanLyHeThong\\MongoRepositories\\Implementations\\DiscountRepository.cs",
-              "ToolTip": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\MongoRepositories\\Implementations\\DiscountRepository.cs",
-              "RelativeToolTip": "QuanLyHeThong\\MongoRepositories\\Implementations\\DiscountRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T14:55:08.666Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Web.config",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\Web.config",
               "RelativeDocumentMoniker": "QuanLyHeThong\\Web.config",
@@ -260,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ImageRepository.cs",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\MongoRepositories\\Implementations\\ImageRepository.cs",
               "RelativeDocumentMoniker": "QuanLyHeThong\\MongoRepositories\\Implementations\\ImageRepository.cs",
@@ -272,20 +260,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProductRepository.cs",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\MongoRepositories\\Implementations\\ProductRepository.cs",
               "RelativeDocumentMoniker": "QuanLyHeThong\\MongoRepositories\\Implementations\\ProductRepository.cs",
               "ToolTip": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\MongoRepositories\\Implementations\\ProductRepository.cs",
               "RelativeToolTip": "QuanLyHeThong\\MongoRepositories\\Implementations\\ProductRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAvwDUAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T08:53:10.23Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CategoryRepository.cs",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\MongoRepositories\\Implementations\\CategoryRepository.cs",
               "RelativeDocumentMoniker": "QuanLyHeThong\\MongoRepositories\\Implementations\\CategoryRepository.cs",
@@ -297,7 +285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AuthService.cs",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\MongoRepositories\\Implementations\\AuthService.cs",
               "RelativeDocumentMoniker": "QuanLyHeThong\\MongoRepositories\\Implementations\\AuthService.cs",
@@ -309,7 +297,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "QuanLyHeThong\\Models\\Product.cs",
+              "ToolTip": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\Models\\Product.cs",
+              "RelativeToolTip": "QuanLyHeThong\\Models\\Product.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAzwBwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T07:54:22.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DiscountRepository.cs",
+              "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\MongoRepositories\\Implementations\\DiscountRepository.cs",
+              "RelativeDocumentMoniker": "QuanLyHeThong\\MongoRepositories\\Implementations\\DiscountRepository.cs",
+              "ToolTip": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\MongoRepositories\\Implementations\\DiscountRepository.cs",
+              "RelativeToolTip": "QuanLyHeThong\\MongoRepositories\\Implementations\\DiscountRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T14:55:08.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "BundleConfig.cs",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\App_Start\\BundleConfig.cs",
               "RelativeDocumentMoniker": "QuanLyHeThong\\App_Start\\BundleConfig.cs",
@@ -321,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "QuanLyHeThong\\Controllers\\HomeController.cs",
@@ -333,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Danhsachsanpham.cshtml",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\Views\\Home\\Danhsachsanpham.cshtml",
               "RelativeDocumentMoniker": "QuanLyHeThong\\Views\\Home\\Danhsachsanpham.cshtml",
@@ -345,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Web.config",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\Views\\Web.config",
               "RelativeDocumentMoniker": "QuanLyHeThong\\Views\\Web.config",
@@ -357,7 +370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Image.cs",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\Models\\Image.cs",
               "RelativeDocumentMoniker": "QuanLyHeThong\\Models\\Image.cs",
@@ -369,7 +382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "IImageRepository.cs",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\MongoRepositories\\Interfaces\\IImageRepository.cs",
               "RelativeDocumentMoniker": "QuanLyHeThong\\MongoRepositories\\Interfaces\\IImageRepository.cs",
@@ -381,7 +394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "teamCss.css",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\css\\teamCss.css",
               "RelativeDocumentMoniker": "QuanLyHeThong\\css\\teamCss.css",
@@ -393,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "packages.config",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\packages.config",
               "RelativeDocumentMoniker": "QuanLyHeThong\\packages.config",
@@ -405,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Danhsachtaikhoan.cshtml",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\Views\\Home\\Danhsachtaikhoan.cshtml",
               "RelativeDocumentMoniker": "QuanLyHeThong\\Views\\Home\\Danhsachtaikhoan.cshtml",
@@ -417,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\Views\\Home\\Login.cshtml",
               "RelativeDocumentMoniker": "QuanLyHeThong\\Views\\Home\\Login.cshtml",
@@ -429,7 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Danhsachnhanvien.cshtml",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\Views\\Home\\Danhsachnhanvien.cshtml",
               "RelativeDocumentMoniker": "QuanLyHeThong\\Views\\Home\\Danhsachnhanvien.cshtml",
@@ -441,7 +454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Danhsachkhachhang.cshtml",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\Views\\Home\\Danhsachkhachhang.cshtml",
               "RelativeDocumentMoniker": "QuanLyHeThong\\Views\\Home\\Danhsachkhachhang.cshtml",
@@ -453,7 +466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Danhsachdonhang.cshtml",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\Views\\Home\\Danhsachdonhang.cshtml",
               "RelativeDocumentMoniker": "QuanLyHeThong\\Views\\Home\\Danhsachdonhang.cshtml",
@@ -465,7 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Danhmucsanpham.cshtml",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\Views\\Home\\Danhmucsanpham.cshtml",
               "RelativeDocumentMoniker": "QuanLyHeThong\\Views\\Home\\Danhmucsanpham.cshtml",
@@ -477,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "QuanLyHeThong\\Views\\Shared\\_Layout.cshtml",
@@ -489,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Error.cshtml",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "QuanLyHeThong\\Views\\Shared\\Error.cshtml",
@@ -501,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "ControllerActionInvoker.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\.vsdbgsrc\\07c4ec1cba87e4656ea3ff248a744c9ad14372e0efa94ac6f688b9e3e27ad0b3\\ControllerActionInvoker.cs",
               "ToolTip": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\.vsdbgsrc\\07c4ec1cba87e4656ea3ff248a744c9ad14372e0efa94ac6f688b9e3e27ad0b3\\ControllerActionInvoker.cs [Read Only]",
@@ -512,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "AsyncControllerActionInvoker.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\.vsdbgsrc\\699240a29965a16a1ab9243778656bb218e80afce9ff4f58d851c59a83480efb\\AsyncControllerActionInvoker.cs",
               "ToolTip": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\.vsdbgsrc\\699240a29965a16a1ab9243778656bb218e80afce9ff4f58d851c59a83480efb\\AsyncControllerActionInvoker.cs [Read Only]",
@@ -520,18 +533,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T12:49:08.255Z",
               "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "QuanLyHeThong\\Models\\Product.cs",
-              "ToolTip": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\Models\\Product.cs",
-              "RelativeToolTip": "QuanLyHeThong\\Models\\Product.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAgwBgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T07:54:22.288Z"
             },
             {
               "$type": "Document",
