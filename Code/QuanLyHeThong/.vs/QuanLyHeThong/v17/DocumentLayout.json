@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\quanlyhethong\\mongorepositories\\implementations\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|solutionrelative:quanlyhethong\\mongorepositories\\implementations\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|d:\\vscode\\legotalk\\legotalk final\\code\\quanlyhethong\\quanlyhethong\\mongorepositories\\implementations\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|solutionrelative:quanlyhethong\\mongorepositories\\implementations\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\quanlyhethong\\mongorepositories\\implementations\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|solutionrelative:quanlyhethong\\mongorepositories\\implementations\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\quanlyhethong\\mongorepositories\\implementations\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|solutionrelative:quanlyhethong\\mongorepositories\\implementations\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\quanlyhethong\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,7 +35,7 @@
       "RelativeMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|solutionrelative:quanlyhethong\\mongorepositories\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|d:\\vscode\\legotalk\\legotalk final\\code\\quanlyhethong\\quanlyhethong\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\quanlyhethong\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{544F3296-F28A-4D8D-9E5B-923678882C9A}|QuanLyHeThong\\QuanLyHeThong.csproj|solutionrelative:quanlyhethong\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -221,7 +221,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -247,31 +247,29 @@
               "ViewState": "AgIAAD8AAAAAAAAAAAAAAJMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-08T16:08:19.034Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ImageRepository.cs",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\MongoRepositories\\Implementations\\ImageRepository.cs",
               "RelativeDocumentMoniker": "QuanLyHeThong\\MongoRepositories\\Implementations\\ImageRepository.cs",
               "ToolTip": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\MongoRepositories\\Implementations\\ImageRepository.cs",
               "RelativeToolTip": "QuanLyHeThong\\MongoRepositories\\Implementations\\ImageRepository.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwCsAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAA3wCsAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T06:14:47.2Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T06:14:47.2Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\MongoRepositories\\Implementations\\OrderRepository.cs",
               "RelativeDocumentMoniker": "QuanLyHeThong\\MongoRepositories\\Implementations\\OrderRepository.cs",
               "ToolTip": "D:\\VSCode\\legoTalk\\legoTalk Final\\Code\\QuanLyHeThong\\QuanLyHeThong\\MongoRepositories\\Implementations\\OrderRepository.cs",
               "RelativeToolTip": "QuanLyHeThong\\MongoRepositories\\Implementations\\OrderRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T09:37:24.323Z",
               "EditorCaption": ""
@@ -286,8 +284,7 @@
               "RelativeToolTip": "QuanLyHeThong\\MongoRepositories\\Implementations\\ProductRepository.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAowBIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T08:53:10.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T08:53:10.23Z"
             },
             {
               "$type": "Document",
@@ -299,8 +296,7 @@
               "RelativeToolTip": "QuanLyHeThong\\Models\\Product.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAA7wCQAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T07:54:22.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T07:54:22.288Z"
             },
             {
               "$type": "Document",
@@ -312,8 +308,7 @@
               "RelativeToolTip": "QuanLyHeThong\\MongoRepositories\\Implementations\\DiscountRepository.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAswBQAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T14:55:08.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T14:55:08.666Z"
             },
             {
               "$type": "Document",
@@ -325,8 +320,7 @@
               "RelativeToolTip": "QuanLyHeThong\\MongoRepositories\\Interfaces\\IAuthService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T14:38:54.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T14:38:54.872Z"
             },
             {
               "$type": "Document",
@@ -338,8 +332,7 @@
               "RelativeToolTip": "QuanLyHeThong\\MongoRepositories\\Implementations\\CategoryRepository.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAowBMAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T09:26:37.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-16T09:26:37.554Z"
             },
             {
               "$type": "Document",
@@ -351,8 +344,7 @@
               "RelativeToolTip": "QuanLyHeThong\\MongoRepositories\\Implementations\\AuthService.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAAAkwBkAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T08:21:30.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-16T08:21:30.801Z"
             },
             {
               "$type": "Document",
