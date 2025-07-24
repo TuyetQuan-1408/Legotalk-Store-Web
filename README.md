@@ -53,9 +53,8 @@ This project was led by **Trinh Tuyet Quan** with four amazing collaborators:
 Here are some visuals of the deployed Legotalk Store Web application:
 
 
-![Homepage View 1](https://drive.google.com/uc?export=view&id=1MBOQCEpPohk8QAjr6v3zd6sz_wrLdsVI)
-![Homepage View 2](https://drive.google.com/uc?export=view&id=1eW8wVuHirpldQknUjQDW-9GCCDdmCi3o)
-![Homepage View 3](https://drive.google.com/uc?export=view&id=1OvCB5BL0VkvoDFAlUrAKtuOVFoAlaS6S)
+![Homepage View 1](https://drive.google.com/uc?export=view&id=1nyq2RoMybIgNIZeRVcpmV20y0SHKWhlA)
+![Homepage View 2](https://drive.google.com/uc?export=view&id=1GoGU2OUBt5LzXegZVPi4H5kpQZ78SkRm)
 *Home page with product listings*
 
 ![Product Detail](https://your-image-link.com/product.png)
