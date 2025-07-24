@@ -52,16 +52,25 @@ This project was led by **Trinh Tuyet Quan** with four amazing collaborators:
 
 Here are some visuals of the deployed Legotalk Store Web application:
 
-
+### 🏠 Homepage 
 ![Homepage View 1](https://drive.google.com/uc?export=view&id=1nyq2RoMybIgNIZeRVcpmV20y0SHKWhlA)
 ![Homepage View 2](https://drive.google.com/uc?export=view&id=1GoGU2OUBt5LzXegZVPi4H5kpQZ78SkRm)
-*Home page with product listings*
 
-![Product Detail](https://your-image-link.com/product.png)
-*Detailed product view and add-to-cart feature*
+### 🧱 Product Page
+![Product View 1](https://drive.google.com/uc?export=view&id=1DBwlS_Q0JGiusFyqxXuqNggMVxTCGbrB)  
+![Product View 2](https://drive.google.com/uc?export=view&id=1gxboJ90d-ZXUIXQBYn0VZM06rHTPULWI)  
+![Product View 3](https://drive.google.com/uc?export=view&id=1YTSuAa8eLvNMml03t0y1N60wH-jt0Gb2)  
 
-![Cart](https://your-image-link.com/cart.png)
-*Shopping cart interface*
+### 🙋‍♀️ About Us
+![About Us Page](https://drive.google.com/uc?export=view&id=1KYHu-PNjxINKTMnVa0p4K0KADny0FAVb)
+
+### 🛒 Cart Page
+
+![Cart](https://drive.google.com/uc?export=view&id=129aG3kZj6-fU3bDKgJ8a-g3wyMcdTwIm)  
+
+### 💳 Payment Page
+
+![Payment](https://drive.google.com/uc?export=view&id=1uDlkfLArdvLnSQ9nUUa4EqwFIlE-VFsL)  
 
 ---
 ## 🚀 How to Run 
