@@ -48,7 +48,23 @@ This project was led by **Trinh Tuyet Quan** with four amazing collaborators:
 - 📦 Backend system to handle product and order data
 
 ---
+## 📊 Project Result
 
+Here are some visuals of the deployed Legotalk Store Web application:
+
+
+![Homepage View 1](https://drive.google.com/uc?export=view&id=1MBOQCEpPohk8QAjr6v3zd6sz_wrLdsVI)
+![Homepage View 2](https://drive.google.com/uc?export=view&id=1eW8wVuHirpldQknUjQDW-9GCCDdmCi3o)
+![Homepage View 3](https://drive.google.com/uc?export=view&id=1OvCB5BL0VkvoDFAlUrAKtuOVFoAlaS6S)
+*Home page with product listings*
+
+![Product Detail](https://your-image-link.com/product.png)
+*Detailed product view and add-to-cart feature*
+
+![Cart](https://your-image-link.com/cart.png)
+*Shopping cart interface*
+
+---
 ## 🚀 How to Run 
 - Database: Optional, you can import the json files in ../Database/Json into MongoDB with the database name legoTalk for use.
 - Angular frontend: Download frontend file are required from frontend branch to Code/frontend
