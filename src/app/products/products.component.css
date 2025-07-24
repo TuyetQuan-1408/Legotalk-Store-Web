@@ -1,0 +1,333 @@
+
+
+/* Sidebar lọc sản phẩm (chiếm 10% chiều rộng) */
+/* Sidebar lọc sản phẩm */
+.filter-sidebar {
+    position: relative;
+    top: 50px;
+    left: 2%;
+    width: 10%; /* Chiếm 20% chiều rộng màn hình */
+    height: 110vh; /* Chiều cao đầy đủ */
+    background-color: rgba(0, 0, 0, 0.8); /* Nền mờ */
+    padding: 20px;
+    z-index: 10; /* Đảm bảo nó ở trên các phần khác */
+    overflow-y: auto; /* Cho phép cuộn nếu có nhiều nội dung */
+    color: #fff;
+    border-right: 2px solid #444; /* Thêm viền phải để phân chia */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4); /* Tạo hiệu ứng bóng */
+    border-radius: 10px 0 0 10px; /* Bo tròn góc trái của sidebar */
+}
+
+/* Cấu trúc cho các mục lọc */
+.filters h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ffd700;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Các nhãn trong filter */
+.filters label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Các checkbox trong filter */
+.filters input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #ffd700; /* Màu checkbox khi chọn */
+}
+
+/* Sidebar content */
+.main-content1 {
+    margin-left: 20%; /* Đẩy nội dung sang phải để tránh bị che bởi sidebar */
+    padding: 20px;
+    padding-top: 150px; /* Thêm khoảng cách để tránh bị đè lên header */
+    min-height: 100vh; /* Đảm bảo content đủ chiều cao */
+    box-sizing: border-box;
+    width: 70%;
+}
+
+/* Điều chỉnh phần nội dung sản phẩm */
+.main-content1 {
+    margin-left: 0%; /* Đẩy sản phẩm sang phải để có khoảng trống cho sidebar */
+    padding: 20px;
+}
+    
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    background: url(http://localhost:3000/image/Main/Bg/Body) no-repeat center center/cover;
+}
+
+
+
+
+/* Định dạng chung cho danh sách sản phẩm */
+.products, .articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch; /* Đảm bảo các phần tử cùng chiều cao */
+}
+
+/* Định dạng chung cho sản phẩm */
+.product {
+    background-color: rgba(235, 235, 235, 0.2);
+    padding: 15px;
+    flex: 1 1 calc(20% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Đảm bảo các phần tử có cùng chiều cao */
+}
+
+/* Hiệu ứng hover khi di chuột vào sản phẩm */
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(235, 235, 235, 0.3);
+}
+
+/* Định dạng hình ảnh của sản phẩm */
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Định dạng phần thông tin chung của sản phẩm */
+.product .info {
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    flex-grow: 1; /* Giúp nội dung luôn đủ cao để tránh lệch nút */
+}
+
+/* Định dạng tiêu đề sản phẩm */
+.product .info h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #fff;
+    text-align: left;
+    width: 100%;
+    line-height: 1.2em;
+    max-height: 2.4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    min-height: 2.4em;
+}
+
+/* Định dạng giá sản phẩm */
+.product .info .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffd700;
+    margin-top: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+/* Hiển thị giá cũ với hiệu ứng gạch ngang */
+.product .info .old-price {
+    text-decoration: line-through;
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* Định dạng nút bấm trong sản phẩm */
+.product .info .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: auto; /* Đẩy nút xuống đáy để không bị lệch */
+}
+
+.product .info .buttons button {
+    background-color: #f1c40f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(241, 196, 15, 0.3);
+}
+
+.product .info .buttons button:hover {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Định dạng danh sách sản phẩm theo dạng lưới */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+/* Định dạng ô sản phẩm */
+.product {
+    width: 280px;
+    height: 450px;
+    background-color: rgba(235, 235, 235, 0.2);
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Định dạng hình ảnh sản phẩm */
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Định dạng khoảng cách giữa icon và chữ trong thanh điều hướng */
+.nav-item i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* Định dạng nội dung chính của tuần lễ giảm giá */
+.weekly-main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.product .info .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 0;
+}
+
+/* định dạng cho mấy cái icon cho product */
+.product .info .details {
+    display: flex;
+    justify-content: flex-start; /* Xích icon qua trái */
+    align-items: center;
+    width: 100%;
+    padding: 5px 0;
+    gap: 10px; /* Tạo khoảng cách giữa các icon */
+    flex-wrap: nowrap; /* Ngăn icon bị xuống dòng */
+}
+
+.product .info .details span {
+    font-size: 14px;
+    color: #ccc;
+    flex: 1;
+    text-align: left; /* Căn chữ sang trái */
+    white-space: nowrap;
+}
+
+.product .info .rating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Xích rating qua trái */
+    flex-wrap: nowrap; /* Đảm bảo rating không xuống dòng */
+}
+
+.product .info .rating i {
+    color: #ffcc00;
+    margin-right: 5px;
+    flex-shrink: 0; /* Ngăn icon bị co lại */
+}
+
+.product .info .rating span {
+    font-size: 12px;
+    color: #fff;
+    flex-shrink: 0; /* Ngăn số rating bị co lại */
+}
+/* Định dạng chung cho pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+/* Định dạng các liên kết trang */
+.pagination a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    background-color: #444;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid #444;
+}
+
+/* Hiệu ứng hover cho các liên kết */
+.pagination a:hover {
+    background-color: #f1c40f;
+    color: #000;
+    transform: scale(1.1); /* Phóng to khi hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Thêm bóng khi hover */
+}
+
+/* Hiệu ứng khi đang ở trang hiện tại */
+.pagination a.active {
+    background-color: #ffd700;
+    color: #000;
+    transform: scale(1.05); /* Phóng to nhẹ khi trang hiện tại */
+    font-weight: bold;
+}
+
+/* Hiệu ứng hover khi là trang hiện tại */
+.pagination a.active:hover {
+    background-color: #f39c12; /* Màu khi hover trang hiện tại */
+    color: #fff;
+}
+
+/* Sử dụng Flexbox để căn chỉnh các phần tử con */
+.content-wrapper {
+    display: flex;
+    align-items: stretch; /* Đảm bảo các phần tử con có chiều cao bằng nhau */
+}
+
+/* Đảm bảo rằng sidebar và main content có chiều cao 100% */
+.filter-sidebar {
+    flex: 0 0 15%; /* Giữ sidebar chiếm 20% chiều rộng */
+}
+
+.main-content1 {
+    flex: 1; /* Đảm bảo main-content1 chiếm phần còn lại của chiều rộng */
+    padding: 20px;
+    margin-left: 5%;
+    height: 100%; /* Chiều cao 100% để nó chiếm toàn bộ chiều cao của content-wrapper */
+    box-sizing: border-box;
+    min-height: 100vh; /* Đảm bảo chiều cao tối thiểu là 100% chiều cao viewport */
+}

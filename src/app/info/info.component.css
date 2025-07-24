@@ -1,0 +1,23 @@
+/* Mặc định, màu chữ của select là màu trắng */
+select {
+    color: white; /* Chữ màu trắng */
+    background-color: transparent; /* Nền trong suốt */
+}
+
+/* Mở dropdown - chọn option sẽ có nền trắng và chữ đen */
+select:focus {
+    background-color: white; /* Nền trắng */
+    color: black; /* Chữ đen */
+}
+
+/* Màu sắc cho các option trong dropdown */
+select option {
+    background-color: white; /* Nền trắng */
+    color: black; /* Chữ đen */
+}
+
+/* Màu sắc cho các option khi hover vào */
+select option:hover {
+    background-color: #007bff; /* Nền xanh */
+    color: white; /* Chữ trắng */
+}

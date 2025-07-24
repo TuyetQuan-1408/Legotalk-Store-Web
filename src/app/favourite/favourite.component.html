@@ -1,0 +1,26 @@
+<!-- Breadcrumb Navigation -->
+<br>  
+<h1 class="favorites-title">Trang Yêu Thích</h1>
+
+<div class="cart-container">
+    <div class="cart-items">
+        <!-- Hiển thị khi không có sản phẩm yêu thích -->
+        <div *ngIf="favoriteProducts.length === 0" class="no-items">
+            Chưa có sản phẩm yêu thích nào
+        </div>
+
+        <!-- Hiển thị danh sách sản phẩm yêu thích động -->
+        <div *ngFor="let product of favoriteProducts" class="cart-item">
+            <img [src]="'http://localhost:3000/image/Products/' + product.Product_ID + '/1'" alt="{{product.Product_Name || 'Sản phẩm'}}">
+            <div class="item-info">
+                <h4>{{product.Product_Name || 'Tên sản phẩm'}}</h4>
+            </div>
+            <button class="add-to-cart" (click)="addToCart(product.Product_ID)">
+                <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
+            </button>
+            <div class="remove" (click)="addToFavourite(product.Product_ID)">
+                <i class="fas fa-trash"></i>
+            </div>
+        </div>
+    </div>
+</div>

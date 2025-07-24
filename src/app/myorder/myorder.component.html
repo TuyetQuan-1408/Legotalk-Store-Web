@@ -1,0 +1,40 @@
+<div class="main-content">
+    <div class="tabs">
+      <button class="active">Tất cả</button>
+      <button>Chờ xác nhận</button>
+      <button>Vận chuyển</button>
+      <button>Hoàn thành</button>
+      <button>Đã hủy</button>
+    </div>
+    <div class="order-list">
+      <div class="order-item" *ngFor="let order of orders">
+        <a [routerLink]="['/product-detail', order.Product_ID]">
+        <img [src]="'http://localhost:3000/image/Products/' + order.Product_ID + '/1'" alt="{{ order.Product_Name }}" height="100" width="100" /></a>
+        <div class="order-details">
+          <h3>{{ order.Product_Name }}</h3>
+          <p>x{{ order.Quantity }}</p>
+          <p>{{ order.Price | number }} VND</p>
+        </div>
+        <div class="order-actions">
+          <p class="status-yellow">
+            {{ order.DeliveryStatus }} | <span class="status-red">{{ order.Status }}</span>
+          </p>
+          <div class="buttons">
+            <button (click)="openRatingPopup(order)">Đánh giá</button>
+            <button (click)="addToCart(order.Product_ID)">Mua lại</button>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="orders.length === 0" class="no-orders">
+        <p>Không có đơn hàng nào để hiển thị.</p>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  
+  <app-product-rating
+    *ngIf="selectedProduct"
+    [product]="selectedProduct"
+    (close)="closeRatingPopup()"
+    (addToCart)="addToCart($event)">
+  </app-product-rating>

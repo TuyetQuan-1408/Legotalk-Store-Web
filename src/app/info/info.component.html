@@ -1,0 +1,42 @@
+<main class="main-content">
+    <div class="tabs">
+        <div class="active">
+            <i class="fas fa-user"></i> Thông tin tài khoản
+        </div>
+    </div>
+
+    <!-- Form chỉnh sửa thông tin -->
+    <form (submit)="saveUserInfo()">
+        <div class="form-group">
+            <i class="fas fa-user"></i>
+            <input type="text" [(ngModel)]="name" name="name" placeholder="Họ và Tên" required />
+        </div>
+        <div class="form-group">
+            <i class="fas fa-calendar-alt"></i>
+            <input type="text" [(ngModel)]="dob" name="dob" placeholder="dd/mm/yyyy" pattern="^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/(19|20)\d\d$" 
+                title="Vui lòng nhập ngày theo định dạng dd/mm/yyyy (ví dụ: 01/01/2025)" />
+        </div>
+        <div class="form-group">
+            <i class="fas fa-venus-mars"></i>
+            <select [(ngModel)]="gender" name="gender">
+                <option value="">-- Chọn giới tính --</option>
+                <option value="male">Nam</option>
+                <option value="female">Nữ</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" [(ngModel)]="email" name="email" placeholder="Email" required />
+        </div>
+        <div class="form-group">
+            <i class="fas fa-phone"></i>
+            <input type="tel" [(ngModel)]="phone" name="phone" placeholder="Số điện thoại" pattern="^\d{10}$" 
+                title="Số điện thoại phải có 10 chữ số" required />
+        </div>
+
+        <!-- Hiển thị thông báo lỗi nếu có -->
+        <p *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</p>
+
+        <button class="submit-btn" type="submit">LƯU THÔNG TIN</button>
+    </form>
+</main>

@@ -1,0 +1,91 @@
+<div class="cart-container">
+    <!-- Phần thông tin khách hàng (Bên trái) -->
+    <div class="customer-info">
+        <div class="section-title">THÔNG TIN KHÁCH HÀNG</div>
+        <div class="form-group">
+            <label for="name">Họ và tên</label>
+            <input id="name" type="text"/>
+            <label for="phone">Số điện thoại người nhận</label>
+            <input id="phone" type="text"/>
+        </div>
+        <div class="form-group">
+            <div class="half-width">
+              <label for="city">Thành phố/Tỉnh</label>
+              <select id="city" [(ngModel)]="selectedCity" (change)="onCityChange(selectedCity)">
+                <option value="">Chọn thành phố/tỉnh</option>
+                <option *ngFor="let city of cities" [value]="city.name">{{ city.name }}</option>
+              </select>
+            </div>
+          
+            <div class="half-width">
+              <label for="district">Quận/Huyện</label>
+              <select id="district" [(ngModel)]="selectedDistrict" (change)="onDistrictChange(selectedDistrict)" [disabled]="!selectedCity">
+                <option value="">Chọn quận/huyện</option>
+                <option *ngFor="let district of districts" [value]="district.name">{{ district.name }}</option>
+              </select>
+            </div>
+          
+            <div class="half-width">
+              <label for="ward">Xã/Phường</label>
+              <select id="ward" [(ngModel)]="selectedWard" [disabled]="!selectedDistrict">
+                <option value="">Chọn xã/phường</option>
+                <option *ngFor="let ward of wards" [value]="ward.name">{{ ward.name }}</option>
+              </select>
+            </div>
+          </div>
+          
+        <div class="form-group">
+            <label for="address">Địa chỉ cụ thể</label>
+            <input id="address" type="text"/>
+        </div>
+        <hr class="custom-hr">
+        <div class="section-title">PHƯƠNG THỨC THANH TOÁN</div>
+        <div class="form-group">
+            <select id="payment-method" onchange="togglePaymentForm()">
+                <option value="cod">COD</option>
+                
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="note">GHI CHÚ</label>
+            <textarea id="note"></textarea>
+        </div>
+    </div>
+
+    
+    <!-- Phần tổng kết đơn hàng (Bên phải) -->
+    <div class="summary">
+        <h3>{{ totalAmountItems }} sản phẩm</h3>
+        <div class="summary-item">
+            <span>Thành tiền:</span>
+            <span>{{ totalAmount | currency: 'VND' }}</span>
+        </div>
+        <div class="summary-item">
+            <span>Mã giảm giá:</span>
+            <span>{{ discountCodeOut || 'Chưa áp dụng' }}</span> 
+        </div>
+        <div class="summary-item">
+            <span>Giảm giá:</span>
+            <span>-{{ discountAmount | currency: 'VND' }}</span>
+        </div>
+        <div class="total">Tổng cộng: {{ totalAmount - discountAmount | currency: 'VND' }}</div>
+
+        <!-- Hiển thị các sản phẩm trong giỏ hàng -->
+        <div class="cart-items">
+            <ng-container *ngFor="let item of cartItems">
+                <div *ngIf="item.Amount > 0" class="cart-item">
+                    <h4>{{ item.Product_Name }}</h4>
+                    <p>Mã sản phẩm: {{ item.Product_ID }}</p>
+                    <p>Số lượng: {{ item.Amount }}</p>
+                    <p>Giá: {{ item.Price | currency: 'VND' }}</p>
+                    <hr>
+                </div>
+            </ng-container>
+        </div>
+
+        <button class="checkout-btn" id="checkout-btn" (click)="onCheckout()">THANH TOÁN</button>
+    </div>
+
+
+
+</div>

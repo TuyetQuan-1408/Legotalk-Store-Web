@@ -1,0 +1,219 @@
+<section class="banner">
+    <img 
+        src="http://localhost:3000/image/Main/Banner/Batman" 
+        alt="Banner Image" 
+        width="800" 
+        height="300"
+    />
+</section>
+
+<section class="section">
+    <h2>SẢN PHẨM GỢI Ý</h2>
+    <div class="products" id="goiyproducts">
+        <div *ngFor="let product of goiyProducts" class="product">
+            <a [routerLink]="['/product-detail', product.Product_ID]">
+                <img [src]="'http://localhost:3000/image/Products/' + product.Product_ID + '/1'">
+            </a>                  
+            <div class="info">
+                <div class="details">
+                    <span *ngIf="product.Pieces">{{ product.Pieces }} PCS</span>
+                    <span *ngIf="product.Weight">{{ product.Weight }}g</span>
+                    <div class="rating">
+                        <span>
+                            <i class="fas fa-star" *ngIf="product.Rating"></i>
+                            {{ product.Rating ? product.Rating.toFixed(1) : "Chưa có đánh giá" }}
+                        </span>
+                    </div>
+                </div>
+                <h3>
+                    {{ product.Product_Name }}
+                </h3>
+                <p class="price">
+                    <ng-container *ngIf="product.Second_Price && product.Second_Price !== 0; else noDiscount">
+                        <ng-container *ngIf="product.Price">
+                            <span style="text-decoration: line-through;">{{ product.Price | number }} VND</span><br/>
+                            {{ product.Second_Price | number }} VND
+                            (-{{ ((product.Price - product.Second_Price) / product.Price * 100) | number: '1.0-0' }}% )
+                        </ng-container>
+                        <ng-container *ngIf="!product.Price">
+                            {{ product.Second_Price | number }} VND
+                        </ng-container>
+                    </ng-container>
+                    <ng-template #noDiscount>
+                        <ng-container *ngIf="product.Price; else contact">
+                            {{ product.Price | number }} VND
+                        </ng-container>
+                        <ng-template #contact>
+                            Liên hệ
+                        </ng-template>
+                    </ng-template>
+                </p>
+                             
+                <div class="buttons">
+                    <button class="add-to-cart" (click)="addToCart(product.Product_ID)">Thêm vào giỏ hàng</button>
+                    <button class="buy-now" (click)="addToFavourite(product.Product_ID)"
+                            >
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>SẢN PHẨM NỔI BẬT</h2>
+    <div class="products" id="noibatproducts">
+        <div *ngFor="let product of noibatProducts" class="product">
+            <a [routerLink]="['/product-detail', product.Product_ID]">
+                <img [src]="'http://localhost:3000/image/Products/' + product.Product_ID + '/1'">
+            </a>                  
+            <div class="info">
+                <div class="details">
+                    <span *ngIf="product.Pieces">{{ product.Pieces }} PCS</span>
+                    <span *ngIf="product.Weight">{{ product.Weight }}g</span>
+                    <div class="rating">
+                        <span>
+                            <i class="fas fa-star" *ngIf="product.Rating"></i>
+                            {{ product.Rating ? product.Rating.toFixed(1) : "Chưa có đánh giá" }}
+                        </span>
+                    </div>
+                </div>
+                <h3>
+                    {{ product.Product_Name }}
+                </h3>
+                <p class="price">
+                    <ng-container *ngIf="product.Second_Price && product.Second_Price !== 0; else noDiscount">
+                        <ng-container *ngIf="product.Price">
+                            <span style="text-decoration: line-through;">{{ product.Price | number }} VND</span><br/>
+                            {{ product.Second_Price | number }} VND
+                            (-{{ ((product.Price - product.Second_Price) / product.Price * 100) | number: '1.0-0' }}% )
+                        </ng-container>
+                        <ng-container *ngIf="!product.Price">
+                            {{ product.Second_Price | number }} VND
+                        </ng-container>
+                    </ng-container>
+                    <ng-template #noDiscount>
+                        <ng-container *ngIf="product.Price; else contact">
+                            {{ product.Price | number }} VND
+                        </ng-container>
+                        <ng-template #contact>
+                            Liên hệ
+                        </ng-template>
+                    </ng-template>
+                </p>
+                             
+                <div class="buttons">
+                    <button class="add-to-cart" (click)="addToCart(product.Product_ID)">Thêm vào giỏ hàng</button>
+                    <button class="buy-now" (click)="addToFavourite(product.Product_ID)"
+                            >
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
+  <!-- Dòng chạy từ trái sang phải -->
+  <div class="scrolling-container">
+      <div class="scrolling-text">
+          <div class="nav-item"><i class="fas fa-cube"></i> SÁNG TẠO</div>
+          <div class="nav-item"><i class="fas fa-cube"></i> TRẢI NGHIỆM</div>
+          <div class="nav-item"><i class="fas fa-cube"></i> KHÁM PHÁ</div>
+          <div class="nav-item"><i class="fas fa-cube"></i> SÁNG TẠO</div>
+          <div class="nav-item"><i class="fas fa-cube"></i> TRẢI NGHIỆM</div>
+          <!-- Nhân đôi nội dung để không bị trống -->
+          <div class="nav-item"><i class="fas fa-cube"></i> SÁNG TẠO</div>
+          <div class="nav-item"><i class="fas fa-cube"></i> TRẢI NGHIỆM</div>
+          <div class="nav-item"><i class="fas fa-cube"></i> KHÁM PHÁ</div>
+          <div class="nav-item"><i class="fas fa-cube"></i> SÁNG TẠO</div>
+          <div class="nav-item"><i class="fas fa-cube"></i> TRẢI NGHIỆM</div>
+      </div>
+  </div>
+</section>
+
+<div>
+    <table style="width: 100%; background-color: #F9D848; border-collapse: collapse; margin: 20px 0; border: 2px solid #000; height: 400px">
+        <tr>
+            <th style="background-color: #F9D848; text-align: left; font-size: 20px;">
+                <img src="http://localhost:3000/image/Main/Event/Spiderman">
+            </th>
+            <th style="background-color: #F9D848;">
+                <div class="weekly-main-content">
+                    <!-- Sản phẩm đầu tiên -->
+                    <div class="product">
+                        <img src="https://storage.googleapis.com/a1aa/image/MK2sRhen_3Hqk0o0EL_cmX5bOD3rp7qgCx2DGBkBj4o.jpg" 
+                            alt="LEGO Spider-Man figure" width="200" height="250"/>
+                        <div class="info">
+                            <h3>Whomping Willow</h3>
+                            <p class="old-price">3.569.000 VND</p>
+                            <p class="new-price">2.000.000 VND</p>
+                            <div class="buttons">
+                                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                                <button class="buy-now">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sản phẩm thứ hai -->
+                    <div class="product">
+                        <img src="https://storage.googleapis.com/a1aa/image/kfAfgV29RmMCiEERUHv52axrz9Z2r4rgRxTo3j0NcXk.jpg" 
+                            alt="Whomping Willow LEGO set" width="200" height="250"/>
+                        <div class="info">
+                            <h3>Whomping Willow</h3>
+                            <p class="old-price">3.569.000 VND</p>
+                            <p class="new-price">2.000.000 VND</p>
+                            <div class="buttons">
+                                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                                <button class="buy-now">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </th>
+        </tr>
+    </table>
+</div>
+
+<!-- PHẦN KHUYẾN MÃI -->
+<div class="promocontainer">
+    <div class="promotitle">KHUYẾN MÃI</div>
+    <div class="image-grid">
+        <div class="image-wrapper">
+            <img src="https://storage.googleapis.com/a1aa/image/pPs_9nn93ZXIotFQtm2ifHvtII-t254cvYUU30l5lAY.jpg" 
+                alt="Promotional image 1 with LEGO characters" width="300" height="400"/>
+        </div>
+        <div class="image-wrapper">
+            <img src="https://storage.googleapis.com/a1aa/image/U1Dgt8TVjpXMmbOnkvr-V8zQ-5MG0B0PcQpW5aBhRDM.jpg" 
+                alt="Promotional image 2 with LEGO characters" width="300" height="400"/>
+        </div>
+        <div class="image-wrapper">
+            <img src="https://storage.googleapis.com/a1aa/image/pYPbn84VMBbPQan7UCB3TMvwJQaFDBRA79OZYmp8L9M.jpg" 
+                alt="Promotional image 3 with LEGO characters" width="300" height="400"/>
+        </div>
+        <div class="image-wrapper">
+            <img src="https://storage.googleapis.com/a1aa/image/XnUISK1iIztEQvbd2uB-z_JXzflXReOMvTW91Q0yH_k.jpg" 
+                alt="Promotional image 4 with LEGO characters" width="300" height="400"/>
+        </div>
+    </div>
+</div>
+
+<section class="section">
+    <h2>Bài Viết</h2>
+    <div class="articles">
+        <div class="article">
+            <img src="https://storage.googleapis.com/a1aa/image/ZcC936w_mWxAJ9XBxUq8hoB1kZYOglWrsfFwVTzzAI0.jpg" 
+                alt="Article Image" width="300" height="200"/>
+            <div class="info">
+                <h3>[Review] [Space] Weki Panda Astronaut - 800PCS - Gấu phi hành gia</h3>
+                <p>25/01/2025</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="https://storage.googleapis.com/a1aa/image/ZcC936w_mWxAJ9XBxUq8hoB1kZYO" 
+                alt="Article Image" width="300" height="200"/>
+        </div>
+    </div>
+</section>

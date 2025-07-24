@@ -1,0 +1,112 @@
+/* Căn chỉnh chung cho trang */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    
+    background-size: cover; /* Đảm bảo hình nền luôn phủ kín */
+    background-position: center;
+}
+/* Header */
+header {
+    width: 100%;
+    text-align: center;
+    margin-top: -80px;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+/* Căn chỉnh container */
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Tiêu đề trang */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fcfcfc;
+}
+
+/* Danh sách bài viết - Xếp theo chiều ngang */
+.article-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+    flex-wrap: nowrap; /* Đảm bảo không cuộn xuống hàng */
+    overflow-x: auto; /* Cho phép cuộn ngang nếu quá nhiều bài */
+}
+
+.article-list li {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-right: 20px; /* Khoảng cách giữa các bài viết */
+    padding: 20px;
+    width: 300px; /* Điều chỉnh kích thước bài viết */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Để xếp hình và nội dung theo cột */
+}
+
+.article-list li:hover {
+    transform: translateY(-5px); /* Tạo hiệu ứng di chuyển nhẹ khi hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Thêm hình minh họa vào bài viết */
+.article-list .image {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.article-list h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+.article-list h2:hover {
+    color: #0056b3; /* Thay đổi màu khi hover vào tiêu đề */
+}
+
+/* Mô tả ngắn gọn */
+.article-list p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Thông tin bài viết */
+.article-list .info {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+/* Các liên kết */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}

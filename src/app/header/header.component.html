@@ -1,0 +1,51 @@
+<div class="navbar">
+    <div class="navbar-top">
+        <a routerLink="/home"><img src="http://localhost:3000/image/Main/Logo/legoTalk" alt="Lego Talk logo" height="50" width="70"/></a>
+        
+        <div class="search-bar">
+          <input type="text" [(ngModel)]="searchQuery" (input)="onSearch()" placeholder="Search"/>
+            <i class="fas fa-search"></i>
+            <div class="search-results" *ngIf="searchResults.length">
+              <ul>
+                  <li *ngFor="let product of searchResults" (click)="goToProduct(product.Product_ID)">
+                      {{ product.name }}
+                  </li>
+              </ul>
+          </div>
+        </div>
+        <div class="nav-icons">
+            <a routerLink='/cart'><i class="fas fa-shopping-bag"></i></a>
+            <a routerLink='/favourite'><i class="fas fa-heart"></i></a>
+            <a routerLink='/my-order'><i class="fas fa-truck"></i></a>
+        </div>
+
+        <!-- Hiển thị khi đã đăng nhập -->
+<div class="user-info" *ngIf="user">
+    <div class="dropdown">
+      <span class="dropdown-toggle">
+        Xin chào, {{ user.name }} ▼
+      </span>
+      
+      <div class="dropdown-menu">
+        <a routerLink="/info" class="dropdown-item">Thông tin tài khoản</a>
+        <button (click)="logout()" class="dropdown-item">Đăng xuất</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Hiển thị khi chưa đăng nhập -->
+  <div class="auth-links" *ngIf="!user">
+    <a routerLink="/login">Đăng nhập</a> |
+    <a routerLink="/register">Đăng ký</a>
+  </div>
+  
+    </div>
+
+    <div class="nav-links">
+        <a routerLink="/home">Trang chủ</a>
+        <a routerLink="/products">Sản phẩm</a>
+        <a routerLink="/post">Bài viết</a>
+        <a routerLink="policy">Điều khoản</a>
+        <a routerLink="about-us">Về chúng tôi</a>
+    </div>
+</div>

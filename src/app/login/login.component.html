@@ -1,0 +1,37 @@
+<main class="main">
+    <div class="register-box">
+        <h2>Đăng Nhập</h2>
+        <form (ngSubmit)="login()" #loginForm="ngForm">
+            <!-- Dùng identifier để nhập email hoặc số điện thoại -->
+            <input 
+                name="identifier" 
+                [(ngModel)]="identifier" 
+                placeholder="Email hoặc số điện thoại*" 
+                required 
+                type="text"
+            />
+            
+            <!-- Trường nhập mật khẩu -->
+            <input 
+                name="password" 
+                [(ngModel)]="password" 
+                placeholder="Mật khẩu*" 
+                required 
+                type="password"
+            />
+            
+            <a routerLink="/forgot/step1"> 
+                <p style="text-align: left; font-size: 10pt;"><u>Quên mật khẩu</u></p> 
+            </a>
+            
+            <!-- Nút đăng nhập chỉ bật khi form hợp lệ -->
+            <button type="submit" [disabled]="!loginForm.valid">ĐĂNG NHẬP</button>
+        </form>
+
+        <i>
+            <p> Bạn chưa có tài khoản? 
+                <a routerLink="/register">Đăng ký ngay</a>
+            </p>
+        </i>
+    </div>
+</main>

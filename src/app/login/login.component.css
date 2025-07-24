@@ -1,0 +1,53 @@
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh);
+    background: url(http://localhost:3000/image/Main/Bg/Body) no-repeat center center/cover;
+}
+
+.register-box {
+    background-color: #EBEBEB1A;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-sizing: border-box; /* Đảm bảo padding được tính vào chiều rộng */
+}
+
+.register-box h2 {
+    margin-bottom: 20px;
+}
+
+.register-box input, 
+.register-box button {
+    width: 100%; /* Đảm bảo cả input và button có chiều rộng đầy đủ */
+    padding: 12px; /* Giữ padding đồng nhất */
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Đảm bảo padding và border không vượt quá chiều rộng của phần tử */
+}
+
+.register-box button {
+    background-color: #ffcc00;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.register-box button:hover {
+    background-color: #e6b800;
+}
+
+.register-box p {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.register-box a {
+    color: #ffcc00;
+    text-decoration: none;
+}

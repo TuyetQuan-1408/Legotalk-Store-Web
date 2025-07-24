@@ -1,0 +1,146 @@
+/* Footer Container */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    padding: 20px 10px; /* Reduced padding */
+    color: white;
+
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px; /* Reduced gap between sections */
+    border-top: 1px solid #333;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* FOOTER */
+.footer {
+    width: 100%;
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    margin-top: 10px;
+}
+/* Footer Content Layout */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 15px; /* Reduced gap between columns */
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Column 1: Footer Logo */
+.footer-logo img {
+    width: 130px; /* Reduced logo size */
+}
+
+/* Column 2: Footer Contact Info */
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Reduced gap */
+    text-align: left;
+}
+
+.footer-contact h3 {
+    font-size: 18px; /* Reduced font size */
+    margin-bottom: 5px;
+}
+
+.footer-contact p {
+    margin: 3px 0; /* Reduced margin */
+}
+
+/* Column 3: Footer Additional Info */
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Reduced gap */
+    text-align: left;
+}
+
+.footer-info h3 {
+    font-size: 18px; /* Reduced font size */
+    margin-bottom: 5px;
+}
+
+.footer-info p {
+    margin: 3px 0; /* Reduced margin */
+}
+
+/* Column 4: Footer Certification Icon */
+.footer-certifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-certification-img {
+    width: 200px;  /* Reduced certification icon size */
+}
+
+/* Footer Social Media */
+.footer-social {
+    display: flex;
+    gap: 12px; /* Reduced gap */
+    margin-top: 15px; /* Reduced margin-top */
+}
+
+.footer-social a {
+    color: white;
+    font-size: 18px; /* Reduced icon size */
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #f1f1f1;
+}
+
+/* Footer Disclaimer */
+.footer-disclaimer {
+    font-size: 13px; /* Reduced font size */
+    color: #888;
+    margin-top: 15px; /* Reduced margin-top */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Stack the columns vertically on small screens */
+        align-items: center;
+    }
+
+    .footer-contact, .footer-info, .footer-certifications, .footer-logo {
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}

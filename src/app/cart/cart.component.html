@@ -1,0 +1,69 @@
+<div class="cart-container">
+    <div *ngIf="cartItems.length === 0" class="no-items">
+      <br>
+        Chưa có sản phẩm nào trong giỏ hàng của bạn
+    </div>
+    <div class="cart-items">
+      <div *ngFor="let item of cartItems" class="cart-item">
+        <a [routerLink]="['/product-detail', item.Product_ID]">
+            <img [src]="'http://localhost:3000/image/Products/' + item.Product_ID + '/1'">
+        </a>
+        <div class="item-info">
+          <h4>{{ item.Product_Name }}</h4>
+          <ng-container *ngIf="item.Second_Price && item.Second_Price !== 0; else noDiscount">
+            <ng-container *ngIf="item.Price">
+                <span style="text-decoration: line-through;">{{ item.Price | number }} VND</span><br/>
+                {{ item.Second_Price | number }} VND
+                (-{{ ((item.Price - item.Second_Price) / item.Price * 100) | number: '1.0-0' }}% )
+            </ng-container>
+            <ng-container *ngIf="!item.Price">
+                {{ item.Second_Price | number }} VND
+            </ng-container>
+        </ng-container>
+        <ng-template #noDiscount>
+            {{ item.Price | number }} VND
+        </ng-template>
+        </div>
+        <div class="quantity">
+          <i class="fas fa-minus" (click)="changeQuantity(item, -1)"></i>
+          <input type="text" [value]="item.Amount" readonly>
+          <i class="fas fa-plus" (click)="changeQuantity(item, 1)"></i>
+        </div>
+        <div class="remove">
+          <i class="fas fa-trash" (click)="removeItem(item)"></i>
+        </div>
+      </div>
+    </div>
+  
+    <hr>
+  
+    <!-- Summary Section -->
+    <div class="summary">
+        <h3>{{ totalAmountItems }} sản phẩm</h3>
+        <div class="summary-item">
+        <span>Thành tiền:</span>
+        <span>{{ totalAmount | currency: 'VND' }}</span>
+        </div>
+        
+        <!-- Mã giảm giá -->
+        <div class="summary-item">
+        <span>Mã giảm giá:</span>
+        <input type="text" [(ngModel)]="discountCode" placeholder="Nhập mã giảm giá">
+        <input type="button" style="width: 70px; color: whitesmoke;" value="Apply" (click)="applyDiscount()">
+        </div>
+    
+        <!-- Hiển thị số tiền giảm giá -->
+        <div class="summary-item">
+        <span>Giảm giá:</span>
+        <span>-{{ discountAmount | currency: 'VND' }}</span>
+        </div>
+        
+        <div class="total">
+        Tổng cộng: {{ totalAmount - discountAmount | currency: 'VND' }}
+        </div>
+    
+        <button class="checkout-btn" (click)="goToPayment()">THANH TOÁN</button>
+    </div>
+  
+  </div>
+  

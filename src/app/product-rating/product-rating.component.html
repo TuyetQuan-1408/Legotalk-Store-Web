@@ -1,0 +1,32 @@
+<div class="modal-overlay">
+    <div class="modal-content">
+      <button class="close-btn" (click)="onClose()">×</button>
+      <h2>Đánh giá sản phẩm</h2>
+      <div class="product-info">
+        <img [src]="product.Image_URL" alt="{{ product.Product_Name }}" class="product-image" />
+        <div class="product-details">
+          <h3>{{ product.Product_Name }}</h3>
+          <p>Số lượng: {{ product.Quantity || 1 }}</p>
+        </div>
+      </div>
+      <div class="rating-section">
+        <label>Chất lượng sản phẩm</label>
+        <div class="stars">
+          <span *ngFor="let star of [1, 2, 3, 4, 5]" 
+                [class.selected]="star <= rating" 
+                (click)="setRating(star)">★</span>
+        </div>
+        <p [ngClass]="{'satisfied': rating >= 4, 'unsatisfied': rating < 4 && rating > 0}">
+          {{ rating >= 4 ? 'Hài lòng' : rating > 0 ? 'Không hài lòng' : '' }}
+        </p>
+      </div>
+      <div class="feedback-section">
+        <label>Đề xuất giao hàng</label>
+        <textarea [(ngModel)]="deliveryFeedback" placeholder="Nhập đề xuất giao hàng..."></textarea>
+      </div>
+      <div class="action-buttons">
+        <button class="submit-btn" (click)="submitRating()">Hoàn thành</button>
+        <button class="buy-again-btn" (click)="onAddToCart()">Mua lại</button>
+      </div>
+    </div>
+  </div>

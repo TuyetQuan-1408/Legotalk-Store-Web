@@ -1,0 +1,24 @@
+<main class="main">
+    <div class="register-box">
+        <h2>Đăng Ký</h2>
+        <form id="registerForm" (ngSubmit)="register()" #registerForm="ngForm">
+            <input type="tel" name="phone" [(ngModel)]="phone" placeholder="Số điện thoại*" pattern="^\d{10}$" required />
+            <input type="email" name="email" [(ngModel)]="email" placeholder="Email*" required />
+            <input type="password" name="password" [(ngModel)]="password" placeholder="Mật khẩu*" required />
+            <button type="submit">ĐĂNG KÝ</button>
+        </form>
+
+        <p *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</p>
+
+        <p>
+            <i> Dữ liệu cá nhân của bạn sẽ được sử dụng để hỗ trợ trải nghiệm của bạn trên toàn bộ trang web này, 
+                để quản lý quyền truy cập vào tài khoản của bạn và cho các mục đích khác được mô tả trong chính sách bảo mật của chúng tôi.
+            </i>
+        </p>
+
+        <p>
+            Bạn đã có tài khoản? 
+            <a routerLink="/login">Đăng nhập tại đây</a>
+        </p>
+    </div>
+</main>

@@ -1,0 +1,236 @@
+/* Header */
+header {
+    background-color: #f0b402;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    z-index: 10; /* Đảm bảo header nằm trên */
+    position: relative; /* Đảm bảo header không bị chồng lên */
+}
+
+/* Tiêu đề */
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+    margin-top: 0%;
+}
+p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Container lớn ở giữa */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 cột */
+    grid-template-rows: 1fr 1fr; /* 2 dòng */
+    gap: 20px;
+    padding: 40px;
+    width: 80%;
+    margin: 0 10%;
+    height: 600px;
+    background-color: rgba(159, 150, 150, 0.5); /* Nền mờ */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Đảm bảo không đè lên header */
+}
+
+/* Cột con */
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Các ô bên trong */
+.box {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
+
+/* Bảng 4 cột và 2 ô mỗi cột */
+.table-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 10%;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td {
+    padding: 20px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Đảm bảo hình ảnh trong bảng luôn có hình tròn cố định */
+table img {
+    width: 120px; /* Chiều rộng cố định cho hình ảnh */
+    height: 120px; /* Chiều cao cố định cho hình ảnh */
+    border-radius: 50%; /* Đảm bảo hình ảnh có dạng tròn */
+    object-fit: cover; /* Cắt ảnh cho phù hợp với hình tròn */
+    margin: 0 auto; /* Căn giữa hình ảnh */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Chuyển thành 1 cột khi màn hình nhỏ */
+    }
+}
+
+/* Đặt lại một số thuộc tính mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Toàn bộ trang */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto; /* Tạo khoảng cách giữa các phần tử */
+    position: relative; /* Để có thể sử dụng position: absolute cho hình ảnh ở dưới đáy */
+    height: 400px; /* Đảm bảo container có chiều cao đủ */
+}
+
+/* Phần nội dung */
+.signup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 500px; /* Khoảng cách giữa phần nội dung và hình ảnh bên phải */
+    z-index: 1;
+}
+
+h3 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Phần nhập email và nút */
+.signup-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.signup-input input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    margin-right: 10px;
+}
+
+.signup-btn {
+    background-color: #f0b402;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background-color: #d48b00;
+}
+
+/* Hình ảnh bên phải */
+.signup-image-right {
+    position: absolute;
+    top: -60px;
+    right: 40px;
+    width: 250px;
+    z-index: 0;
+}
+
+/* Thêm border-radius cho hình ảnh */
+.signup-image-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Làm hình ảnh thành hình tròn */
+}
+
+/* Hình ảnh bên dưới đáy */
+.signup-image-bottom {
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    width: 150px;
+    z-index: 0;
+}
+
+/* Thêm border-radius cho hình ảnh dưới đáy */
+.signup-image-bottom img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Làm hình ảnh thành hình tròn */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .signup-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto; /* Điều chỉnh chiều cao khi có màn hình nhỏ */
+    }
+
+    .signup-content {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .signup-input {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .signup-input input[type="email"] {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .signup-image-right {
+        position: relative;
+        width: 100px;
+        margin-top: 20px;
+    }
+
+    .signup-image-bottom {
+        position: relative;
+        width: 120px;
+    }
+}

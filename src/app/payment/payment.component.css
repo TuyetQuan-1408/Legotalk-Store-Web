@@ -1,0 +1,12 @@
+.payment-modal {
+    position: fixed;
+    top: 50%;  /* Đặt từ trên xuống giữa màn hình */
+    left: 50%; /* Đặt từ trái sang giữa màn hình */
+    transform: translate(-50%, -50%); /* Căn chỉnh chính xác để modal ở giữa */
+    width: 400px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,0 +1,92 @@
+/* Căn chỉnh chung cho trang */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+
+    background-size: cover; /* Đảm bảo hình nền luôn phủ kín */
+    background-position: center;
+}
+
+/* Căn chỉnh container */
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Căn chỉnh bảng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+/* Tiêu đề và thông tin bài viết */
+.header {
+    background-color: rgb(225, 225, 208,0.3);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.info {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Cột hình ảnh */
+.image {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px; /* Giảm khoảng cách giữa hình ảnh và nội dung */
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng mờ cho hình ảnh */
+}
+
+/* Cột nội dung */
+.content {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    padding: 20px;
+  
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng mờ cho phần nội dung */
+    margin-top: 20px; /* Tạo khoảng cách giữa hình ảnh và nội dung */
+}
+
+.content h2 {
+    font-size: 22px;
+    color: whitesmoke;
+    margin-top: 0;
+    border-bottom: 2px solid #eee; /* Thêm đường viền dưới tiêu đề */
+    padding-bottom: 5px;
+}
+
+.content p {
+    font-size: 16px;
+    color: #efebeb;
+    line-height: 1.6;
+    margin-bottom: 15px; /* Tạo khoảng cách giữa các đoạn văn */
+}
+
+.content ul {
+    padding-left: 20px; /* Đẩy các mục trong danh sách ra ngoài */
+}
+
+.content ul li {
+    font-size: 16px;
+    color:  #efebeb;
+    margin-bottom: 10px;
+}

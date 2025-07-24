@@ -1,0 +1,198 @@
+<div class="main-container1">
+        
+    <!-- Phần sản phẩm -->
+    <div class="product-container">
+
+        <!-- Ảnh sản phẩm nhỏ bên trái -->
+        <div class="product-thumbnails">
+            <img *ngFor="let img of imageList" 
+                 [src]="img" 
+                 [alt]="'Thumbnail ' + img"
+                 (click)="changeMainImage(img)">
+        </div>
+    
+        <!-- Ảnh sản phẩm lớn ở giữa -->
+        <div class="product-main-image">
+            <img [src]="mainImage" alt="{{ product?.Product_Name }}">
+        </div>
+    
+        <!-- Thông tin sản phẩm bên phải -->
+        <div class="product-details">
+            <button class="status" [ngClass]="{'in-stock': product?.Stock_Quantity > 0, 'out-of-stock': product?.Stock_Quantity === 0}">
+                {{ product?.Stock_Quantity > 0 ? 'Còn hàng' : 'Hết hàng' }}
+            </button>
+            <h1>{{ product?.Product_Name }}</h1>
+            <div class="price">{{ product?.Price ? (product?.Price | number) + ' VND' : 'Liên hệ' }}</div>
+    
+            <!-- Nút bấm -->
+            <div class="buttons">
+                <button class="add-to-cart" (click)="addToCart(product.Product_ID)">Thêm vào giỏ hàng</button>
+                <button class="buy-now" (click)="addToFavourite(product.Product_ID)"><i class="fas fa-heart"></i></button>
+            </div>
+    
+            <!-- Chỉ số sản phẩm -->
+            <div class="product-stats">
+                <div><i class="fas fa-cubes"></i> <span>{{ product?.Pieces }} pieces</span></div>
+                <div><i class="fas fa-weight-hanging"></i> <span>{{ product?.Weight }}g weight</span></div>
+                <div><i class="fas fa-star"></i> <span>{{ product?.Rating ? product?.Rating.toFixed(1) : 'Chưa có đánh giá' }}</span></div>
+            </div>
+        </div>
+    
+    </div>
+    <!-- Container chứa thông tin sản phẩm -->
+<div class="detailed-product-container">
+
+<!-- Mô tả sản phẩm -->
+<h3>Mô tả sản phẩm</h3>
+<pre style="max-width: 1100px; white-space: pre-wrap; word-wrap: break-word;">
+    {{ product?.Product_Description ?? 'Không có thông tin' }}
+</pre>
+</div>
+
+
+
+    <!-- Phần đánh giá -->
+    <div class="reviews">
+        <h2>Đánh giá của khách hàng</h2>
+
+        <!-- Tổng quan đánh giá -->
+        <div class="rating-summary">
+            <div class="total-reviews">{{ product?.Rating }}</div>
+            <div class="stars">
+                <span *ngFor="let star of [1,2,3,4,5]; let i = index">
+                    <i class="fas"
+                        [ngClass]="{
+                            'fa-star': i + 1 <= product?.Rating,
+                        }">
+                    </i>
+                    <i class="fas"
+                        [ngClass]="{
+                            'fa-star-half-alt': i + 1 > product?.Rating && i < product?.Rating,
+                        }">
+                    </i>
+                    <i class="far"
+                        [ngClass]="{
+                            'fa-star': i > product?.Rating
+                        }">
+                    </i>
+                </span>
+                <i *ngIf="product?.Rating % 1 == 0 && product?.Rating != 5" class="far fa-star"></i>
+            </div>
+            <div class="total-reviews">{{ totalReviews }} đánh giá</div>
+        </div>
+
+        <!-- Phân tích đánh giá -->
+        <div class="rating-breakdown">
+            <div class="rating-bar" *ngFor="let star of [5, 4, 3, 2, 1]">
+                <span class="star-label">
+                    <span *ngFor="let i of [1,2,3,4,5]; let index = index">
+                        <i class="fas"
+                            [ngClass]="{
+                                'fa-star': index + 1 <= star
+                            }">
+                        </i>
+                        <i class="far"
+                            [ngClass]="{
+                                'fa-star': index + 1 > star
+                            }">
+                        </i>
+                    </span>
+                </span>
+                <div class="bar">
+                    <div class="fill" [style.width.%]="totalReviews > 0 ? (ratingBreakdown[star] / totalReviews) * 100 : 0"></div>
+                </div>
+                <span>{{ ratingBreakdown[star] }} đánh giá</span>
+            </div>
+        </div>
+
+        <!-- Bộ lọc đánh giá -->
+        <div class="filter">
+            <button (click)="filterReviews(null)">Tất cả</button>
+            <button (click)="filterReviews(5)">5 sao</button>
+            <button (click)="filterReviews(4)">4 sao</button>
+            <button (click)="filterReviews(3)">3 sao</button>
+            <button (click)="filterReviews(2)">2 sao</button>
+            <button (click)="filterReviews(1)">1 sao</button> 
+        </div>
+        
+        <!-- Danh sách đánh giá -->
+        <div class="review-list">
+            <div *ngFor="let review of filteredReviews" class="review">
+            <div class="user">
+                <img alt="User avatar" height="40" src="http://localhost:3000/image/Main/Icon/Avatar" width="40" />
+                <div>
+                <div class="name">{{ getCustomerName(review.Customer_ID) }}</div>
+                <div class="date">{{ formatDate(review.Date) }}</div>
+                <div class="rating">
+                    <span *ngFor="let i of [1, 2, 3, 4, 5]; let index = index">
+                    <i class="fas" [ngClass]="{ 'fa-star': index + 1 <= review.Rating }" style="color: #FFD700;"></i>
+                    </span>
+                </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="text">{{ review.Comment }}</div>
+            </div>
+            </div>
+        </div>    
+    </div> <!-- Kết thúc reviews -->
+    <div class="pagination">
+       </div>
+       <div class="recommended-products">
+        <h2>
+         SẢN PHẨM GỢI Ý
+        </h2>
+        <div class="content-wrapper">
+            <div class="pd-products">
+                <!-- Lặp qua các sản phẩm gợi ý -->
+                <div *ngFor="let productGy of goiyProducts" class="product">
+                    <a [routerLink]="['/product-details', productGy.Product_ID]">
+                        <img [src]="'http://localhost:3000/image/Products/' + productGy.Product_ID + '/1'" alt="Product Image">
+                    </a>               
+                    <div class="info">
+                        <div class="details">
+                            <span *ngIf="productGy.Pieces">{{ productGy.Pieces }} PCS</span>
+                            <span *ngIf="productGy.Weight">{{ productGy.Weight }}g</span>
+                            <div class="rating">
+                                <span>
+                                    <i class="fas fa-star" *ngIf="productGy.Rating"></i>
+                                    {{ productGy.Rating ? productGy.Rating.toFixed(1) : "Chưa có đánh giá" }}
+                                </span>
+                            </div>
+                        </div>
+                        <h3>
+                            {{ productGy.Product_Name }}
+                        </h3>
+                        <p class="price">
+                            <ng-container *ngIf="productGy.Second_Price && productGy.Second_Price !== 0; else noDiscount">
+                                <ng-container *ngIf="productGy.Price">
+                                    <span style="text-decoration: line-through;">{{ productGy.Price | number }} VND</span><br/>
+                                    {{ productGy.Second_Price | number }} VND
+                                    (-{{ ((productGy.Price - productGy.Second_Price) / productGy.Price * 100) | number: '1.0-0' }}% )
+                                </ng-container>
+                                <ng-container *ngIf="!productGy.Price">
+                                    {{ productGy.Second_Price | number }} VND
+                                </ng-container>
+                            </ng-container>
+                            <ng-template #noDiscount>
+                                <ng-container *ngIf="productGy.Price; else contact">
+                                    {{ productGy.Price | number }} VND
+                                </ng-container>
+                                <ng-template #contact>
+                                    Liên hệ
+                                </ng-template>
+                            </ng-template>
+                        </p>
+                                    
+                        <div class="buttons">
+                            <button class="add-to-cart" (click)="addToCart(productGy.Product_ID)">Thêm vào giỏ hàng</button>
+                            <button class="buy-now" (click)="addToFavourite(productGy.Product_ID)"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        
+     
+        
+</div> <!-- Kết thúc main-container -->

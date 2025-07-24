@@ -1,0 +1,184 @@
+
+
+/* ==============================
+   BREADCRUMB NAVIGATION (Thanh điều hướng)
+   ============================== */
+   .main-container {
+    width: 85%;
+    margin: 40px auto;
+    background-color: rgba(44, 44, 44, 0.65); 
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 5px 15px rgba(59, 54, 54, 0.9);
+}
+/* ==============================
+   BREADCRUMB NAVIGATION (Thanh điều hướng & tiêu đề)
+   ============================== */
+   .favorites-title {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff8dc;
+    
+    letter-spacing: 3px;
+    animation: glowing 2s infinite alternate ease-in-out, shake 2s infinite ease-in-out;
+    padding-bottom: 10px;
+}
+
+/* Hiệu ứng chữ phát sáng */
+
+
+/* Hiệu ứng lắc */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+}
+
+/* ==============================
+   CART CONTAINER (Giỏ hàng) - Chiếm 70% màn hình
+   ============================== */
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: flex-start;
+    width: 80%; /* Kéo dài ra 70% màn hình */
+    margin: auto; /* Căn giữa */
+}
+
+/* Danh sách sản phẩm */
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 10px;
+    flex-grow: 1; /* Mở rộng hết không gian còn lại */
+}
+
+/* Mỗi sản phẩm trong giỏ hàng */
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Ảnh sản phẩm */
+.cart-item img {
+    width: 120px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+/* Thông tin sản phẩm */
+.cart-item .item-info h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Giá cũ */
+.cart-item .item-info .price {
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+/* Giá đã giảm */
+.cart-item .item-info .discounted-price {
+    font-size: 18px;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* ==============================
+   NÚT THÊM VÀO GIỎ HÀNG (Giống ô nhập số lượng cũ)
+   ============================== */
+.add-to-cart {
+    width: 180px; /* Tăng chiều ngang */
+    text-align: center;
+    margin-left: auto; /* Đẩy về bên phải */
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hiệu ứng hover */
+.add-to-cart:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+}
+
+/* Khi nhấn vào nút */
+.add-to-cart:active {
+    transform: scale(0.95);
+    background: rgba(255, 204, 0, 0.5);
+}
+
+/* Biểu tượng giỏ hàng */
+.add-to-cart i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* ==============================
+   NÚT XÓA SẢN PHẨM
+   ============================== */
+.remove {
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    color: red;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.remove:hover {
+    color: #ff4444;
+    transform: scale(1.1);
+}
+
+/* ==============================
+   SCROLLBAR CUSTOMIZATION
+   ============================== */
+.cart-items::-webkit-scrollbar {
+    width: 6px;
+}
+.cart-items::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+.cart-items::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* ==============================
+   SUMMARY (Tóm tắt đơn hàng)
+  ============================== */
+
+
